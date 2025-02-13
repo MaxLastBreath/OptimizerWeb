@@ -82,7 +82,7 @@ function initializeSlider() {
 
     setInterval(() => {
         fadeOutAndChange(getRandomImage());
-    }, 10000);
+    }, 25000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
