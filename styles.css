@@ -191,13 +191,20 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+
 @media screen and (max-width: 768px) {
+    h3 {
+        font-size: 20px;
+    }
     #directory a {
         font-size: 1.2em;
         padding: 8px 15px;
     }
     .banner-image {
         max-width: 90%;
+    }
+    .container {
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
@@ -206,10 +213,4 @@ footer {
         font-size: 1em;
         padding: 8px 15px;
     }
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-  grid-template-columns: repeat(1,1fr);
-  }
 }
