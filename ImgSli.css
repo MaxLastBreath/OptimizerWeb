@@ -1,5 +1,17 @@
 /* Image Comparison Styles */
+.ImageBounds {
+    overflow: hidden;
+    z-index: 11;
+    background: #282d32;
+    text-align: center;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
 .ImageComparer {
+    position: relative;
     overflow: hidden;
     z-index: 11;
     background: #282d32;
