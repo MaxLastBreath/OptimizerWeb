@@ -9,6 +9,7 @@ const imageNames = [
     "image5.jpg",
     "image6.jpg",
     "image7.jpg",
+    "image8.jpg",
 ];
 
 function getRandomImage() {

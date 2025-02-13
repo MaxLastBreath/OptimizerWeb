@@ -38,7 +38,7 @@
     object-fit: cover;
 }
 
-.ImageComparer .box img.after {
+.ImageComparer .box .after img {
     width: 100%;
 }
 
