@@ -41,6 +41,7 @@ function fadeOutAndChange(newImageIndex) {
     newImg.style.width = "100%";
     newImg.style.height = "100%";
     newImg.style.opacity = "0";
+    newImg.style.filter = "blur(3px)";
     newImg.style.transition = "opacity 1s ease-in-out";
 
     container.appendChild(newImg);
