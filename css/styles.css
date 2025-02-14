@@ -1,5 +1,6 @@
 :root {
-    --bg-color: #1f3b4633; /* blue */
+    --bg-color: #11344278; /* blue */
+    --footer-color: #061820d8; /* blue */
     --body-color: #1f1f30;
     --text-color: #e6e6e6;
     --text-color-2: #00b7ff;
@@ -138,8 +139,40 @@ h4 {
     font-size: 50px; 
 }
 
+b {
+    text-decoration: solid;
+}
+
 p {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.center {
     text-align: center;
+}
+
+.underline-hover {
+    display: flexbox;
+    position: relative;
+    text-decoration: none;
+}
+
+.underline-hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(133, 229, 255);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.underline-hover:hover::after {
+    width: 50%;
+    left: 25%;
 }
 
 .download-link, .contact-link {
@@ -154,21 +187,30 @@ p {
 }
 
 footer {
-    background-color: #2b2b4a11;
-    text-align: center;
-    padding: 10px 0;
+    background-color: var(--footer-color);
+    position: relative;
+    margin-top: 20px;
+    padding: 20px 0px;
     color: #ccc;
     width: 100%;
+    opacity: 1
 }
 
 .background-images {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0.07;
+}
+
+.fixed-pos {
+    position: fixed;
+}
+
+.absolute-pos {
+    position: absolute;
 }
 
 .background-images img {
