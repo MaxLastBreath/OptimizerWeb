@@ -1,6 +1,6 @@
 :root {
-    --bg-color: rgba(18, 19, 29, 0.88); /* blue */
-    --bg-color-grad: rgb(32, 31, 34); /* blue */
+    --bg-color: rgba(18, 19, 29, 0.637); /* blue */
+    --bg-color-grad: rgb(40, 38, 44); /* blue */
     --footer-color: rgba(6, 24, 32, 0.847); /* blue */
     --body-color: rgb(31, 31, 48);
     --text-color: rgb(230, 230, 230);
@@ -18,13 +18,12 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-blend-mode: overlay;
-    background: linear-gradient(to bottom, var(--bg-color) 15%, var(--bg-color-grad) 80%);
+    background-color: var(--bg-color-grad);
     color: var(--text-color);
     display: block;
     flex-direction: column;
     min-height: 100vh;
     padding-top: 60px;
-
 }
 
 .background-images {
@@ -33,8 +32,18 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.5;
+}
 
+.background-images::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    background: linear-gradient(to bottom, var(--bg-color) 35%, var(--bg-color-grad) 80%); 
+    pointer-events: none;
 }
 
 .bg-image {
@@ -141,6 +150,13 @@ hr1 {
     border: none;
     border-top: 2px solid #3498db4d;
     width: 100%;
+}
+
+.separate {
+    border: none;
+    border-top: 2px solid #3498db4d;
+    width: 50%;
+    margin-left: 25%;
 }
 
 h1 {
