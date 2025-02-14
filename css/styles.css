@@ -1,11 +1,15 @@
 :root {
-    --bg-color: #11344278; /* blue */
-    --footer-color: #061820d8; /* blue */
-    --body-color: #1f1f30;
-    --text-color: #e6e6e6;
-    --text-color-2: #00b7ff;
-    --border-color: #dddddd80;
-    --border-color-2: #00b7ff;
+    --bg-color: rgba(17, 52, 66, 0.471); /* blue */
+    --footer-color: rgba(6, 24, 32, 0.847); /* blue */
+    --body-color: rgb(31, 31, 48);
+    --text-color: rgb(230, 230, 230);
+    --text-color-2: rgb(0, 183, 255);
+    --border-color: rgba(221, 221, 221, 0.502);
+    --border-color-2: rgb(0, 183, 255);
+    --transparent: rgba(0, 183, 255, 0);
+    --icon-hover: rgba(0, 183, 255);
+    --nav-bar: rgba(0, 0, 0, 0.7);
+    --footer: rgba(20, 33, 23, 0.149);
 }
 
 body {
@@ -16,28 +20,8 @@ body {
     color: var(--text-color);
     display: block;
     flex-direction: column;
-    min-height: 100vh
-}
-
-#directory {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: left;
-    padding: 15px;
-}
-
-#directory a {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 1.3em;
-    font-weight: bold;
-    border-radius: 5px;
-    border: 2px solid var(--border-color);
-    transition: all 0.3s ease;
+    min-height: 100vh;
+    padding-top: 60px;
 }
 
 header {
@@ -187,13 +171,15 @@ p {
 }
 
 footer {
-    background-color: var(--footer-color);
+    background-color: var(--footer);
     position: relative;
     margin-top: 20px;
     padding: 20px 0px;
     color: #ccc;
     width: 100%;
-    opacity: 1
+    opacity: 1;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .background-images {
