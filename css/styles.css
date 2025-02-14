@@ -110,12 +110,26 @@ body {
     padding: 0 20px;
 }
 
+.focused-container {
+    display: block; 
+    width: 75%; 
+    margin-left: 12.5%
+}
+
 .mod-section, .highlight-section, .contact-section {
     border-radius: 8px;
     margin-bottom: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     position: relative;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #3498db4d;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 h1 {
@@ -159,6 +173,14 @@ p {
     text-align: center;
 }
 
+.underline {
+    display: flexbox;
+    position: relative;
+    text-decoration: underline;
+}
+
+
+
 .underline-hover {
     display: flexbox;
     position: relative;
@@ -192,13 +214,15 @@ p {
     text-decoration: underline;
 }
 
+
 footer {
-    background-color: var(--footer);
+    display: block;
     position: relative;
     margin-top: 20px;
     padding: 50px 0px;
     color: #ccc;
-    width: 100%;
+    width: 80%;
+    left: 10%;
     opacity: 1;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
@@ -231,6 +255,10 @@ footer {
     }
     .container {
         grid-template-columns: repeat(1,1fr);
+    }
+    .focused-container {
+        width: 100%;
+        margin-left: 0;
     }
 }
 
