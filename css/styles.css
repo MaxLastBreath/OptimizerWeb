@@ -48,7 +48,7 @@ body {
 
 .bg-image {
     filter: blur(2px);
-
+    object-fit: cover;
 }
 
 .fixed-pos {
