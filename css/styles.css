@@ -1,5 +1,6 @@
 :root {
-    --bg-color: rgba(17, 52, 66, 0.471); /* blue */
+    --bg-color: rgba(18, 19, 29, 0.88); /* blue */
+    --bg-color-grad: rgb(32, 31, 34); /* blue */
     --footer-color: rgba(6, 24, 32, 0.847); /* blue */
     --body-color: rgb(31, 31, 48);
     --text-color: rgb(230, 230, 230);
@@ -9,14 +10,15 @@
     --transparent: rgba(0, 183, 255, 0);
     --icon-hover: rgba(0, 183, 255);
     --nav-bar: rgba(0, 0, 0, 0.7);
-    --footer: rgba(20, 33, 23, 0.149);
+    --footer: rgba(27, 34, 39, 0.482);
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: var(--body-color);
+    background-blend-mode: overlay;
+    background: linear-gradient(to bottom, var(--bg-color) 15%, var(--bg-color-grad) 80%);
     color: var(--text-color);
     display: block;
     flex-direction: column;
@@ -30,11 +32,11 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.07;
+    opacity: 0.1;
 }
 
 .bg-image {
-    filter: blur(3px);
+    filter: blur(2px);
 }
 
 .fixed-pos {
@@ -116,6 +118,12 @@ body {
     position: relative;
 }
 
+h1 {
+    padding-bottom: 10px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 h2 {
     color: #00b7ff;
     padding-bottom: 10px;
@@ -142,6 +150,7 @@ b {
 
 p {
     text-align: left;
+    font-size: 17px;
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -187,7 +196,7 @@ footer {
     background-color: var(--footer);
     position: relative;
     margin-top: 20px;
-    padding: 20px 0px;
+    padding: 50px 0px;
     color: #ccc;
     width: 100%;
     opacity: 1;
