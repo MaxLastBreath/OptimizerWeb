@@ -45,6 +45,7 @@ function fadeOutAndChange(newImageIndex) {
     newImg.style.filter = "blur(3px)";
     newImg.style.transition = "opacity 1s ease-in-out";
 
+
     container.appendChild(newImg);
 
     // Ensure new image is loaded before fading in

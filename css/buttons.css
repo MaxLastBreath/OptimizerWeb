@@ -1,0 +1,75 @@
+.button-container {
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+.discord-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #7289da; /* Discord blue */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+.discord-button:hover {
+    background-color: #5b6eae;
+    transform: scale(1.05);
+}
+
+.discord-button:active {
+    background-color: #4e5d99;
+}
+
+.patreon-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #f96854; /* Patreon red */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+.patreon-button:hover {
+    background-color: #e55a49; 
+    transform: scale(1.05);
+}
+
+.patreon-button:active {
+    background-color: #d04d40;
+}
+
+.kofi-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff5e5b; /* Ko-fi red */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+.kofi-button:hover {
+    background-color: #e14b47;
+    transform: scale(1.05);
+}
+  
+.kofi-button:active {
+    background-color: #c13e3b;
+}
