@@ -10,10 +10,36 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        const imageNames = [
+            "BOTW/image1.jpg",
+            "BOTW/image2.jpg",
+            "BOTW/image3.jpg",
+            "BOTW/image4.jpg",
+            "BOTW/image5.jpg",
+            "BOTW/image6.jpg",
+            "BOTW/image7.jpg",
+            "BOTW/image8.jpg",
+            "BOTW/image9.jpg",
+            "BOTW/image10.jpg",
+            "BOTW/image11.jpg",
+            "BOTW/image12.jpg",
+            "BOTW/image13.jpg",
+            "BOTW/image14.jpg",
+            "TOTK/image1.jpg",
+            "TOTK/image2.jpg",
+            "TOTK/image3.jpg",
+            "EOW/image1.jpg",
+            "EOW/image2.jpg",
+        ];     
+    </script>
     <script src="js/backgroundSlider.js"></script>
     <script src="js/ImageSlider.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/navbarScroll.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+
+    
 </head>
 
 <body>
@@ -23,14 +49,15 @@
 
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="logo"><img src="Pictures/optimizer_logo_active.png" alt="" style="height: 35px;"></a>
+            <a href="#" class="logo"><img src="Pictures/logo_main.png" style="height: 35px;" id="logo"></a>
             <ul class="nav-links">
-                <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-brands fa-github" style="font-size: 24px;"></i></a></li>
-                <li><a href="https://discord.gg/V7WDfAXPxp" target="_blank"><i class="fa-brands fa-discord" style="font-size: 24px;"></i></a></li>
-                <li><a href="https://www.patreon.com/c/MaxLastBreath" target="_blank"><i class="fa-brands fa-patreon" style="font-size: 24px;"></i></a></li>
-                <li><a href="https://ko-fi.com/MaxLastBreath" target="_blank"><i class="fas fa-ko-fi" style="font-size: 24px;"></i></a></li>
+                <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://discord.gg/V7WDfAXPxp" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/c/MaxLastBreath" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
+                <li><a href="https://ko-fi.com/MaxLastBreath" target="_blank"><i class="fas fa-ko-fi"></i></a></li>
             </ul>
         </div>
+        <script>updateLogo();</script>
     </nav>
 
     <div class="focused-container" style="margin-bottom: 120px;">
@@ -41,17 +68,18 @@
         <p>Featuring Game Optimization, Dynamic Framerate, 60+ FPS, Higher Resolutions, Higher Shadow Resolution, Free Camera, Cheats and More...</p>
         <hr></hr>
         <ul class="nav-links">
-            <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-brands fa-github" style="font-size: 24px;"></i></a></li>
-            <li><a href="https://discord.gg/V7WDfAXPxp" target="_blank"><i class="fa-brands fa-discord" style="font-size: 24px;"></i></a></li>
-            <li><a href="https://www.patreon.com/c/MaxLastBreath" target="_blank"><i class="fa-brands fa-patreon" style="font-size: 24px;"></i></a></li>
-            <li><a href="https://ko-fi.com/MaxLastBreath" target="_blank"><i class="fas fa-ko-fi" style="font-size: 24px;"></i></a></li>
+            <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://discord.gg/V7WDfAXPxp" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+            <li><a href="https://www.patreon.com/c/MaxLastBreath" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
+            <li><a href="https://ko-fi.com/MaxLastBreath" target="_blank"><i class="fas fa-ko-fi"></i></a></li>
         </ul>
-        <p class="center">Find Game Pages</p>
+        <p class="center">
+            <a class="custom-nav" onclick="scrollToSection('AllGames')">Find Game Pages</a>
+        </p>
         <p class="center"><i class="fa-solid fa-long-arrow-down"></i></p>
     </div>
 
-
-    <div style="margin-top: 150px;">
+    <div style="margin-top: 150px;" id="AllGames">
         <h1 class="center">All Games</h1>
         <div class="separate" style="margin-bottom: 25px;"></div>
     </div>
@@ -59,35 +87,35 @@
     <div class="image-container" style="margin-bottom: 120px;">
         <div class="image-box-container">
             <a href="TOTK.html" class="image-box-link underline-hover">
-                <div class="image-box"> <img src="BG/image1.jpg" alt="Image 1"></div>
+                <div class="image-box"> <img src="BG/TOTK/image1.jpg" alt="Image 1"></div>
                 <div class="game-name">The Legend of Zelda: Tears Of The Kingdom</div>
             </a>
         </div>
 
         <div class="image-box-container">
             <a href="TOTK.html" class="image-box-link underline-hover">
-                <div class="image-box"> <img src="BG/image2.jpg" alt="Image 1"></div>
+                <div class="image-box"> <img src="BG/BOTW/image1.jpg" alt="Image 1"></div>
                 <div class="game-name">The Legend of Zelda: Breath Of The Wild</div>
             </a>
         </div>
 
         <div class="image-box-container">
             <a href="TOTK.html" class="image-box-link underline-hover">
-                <div class="image-box"> <img src="BG/image3.jpg" alt="Image 1"></div>
+                <div class="image-box"> <img src="BG/EOW/image1.jpg" alt="Image 1"></div>
                 <div class="game-name">The Legend of Zelda: Echoes Of Wisdom</div>
             </a>
         </div>
 
         <div class="image-box-container">
             <a href="TOTK.html" class="image-box-link underline-hover">
-                <div class="image-box"> <img src="BG/image4.jpg" alt="Image 1"></div>
+                <div class="image-box"> <img src="BG/EOW/image2.jpg" alt="Image 1"></div>
                 <div class="game-name">The Legend of Zelda: Link's Awakening</div>
             </a>
         </div>
 
         <div class="image-box-container">
             <a href="TOTK.html" class="image-box-link underline-hover">
-                <div class="image-box"> <img src="BG/image5.jpg" alt="Image 1"></div>
+                <div class="image-box"> <img src="BG/BOTW/image11.jpg" alt="Image 1"></div>
                 <div class="game-name">Pokemon Scarlet and Violet</div>
             </a>
         </div>
@@ -102,7 +130,7 @@
                 <h1>Meet MaxLastBreath on <b style="color: #4e5d99;">Discord</b></h1>
                 <hr1></hr1>
                 <p class="center">Join the ever-growing community on The Way Of The Wind Discord (with over 8000 members) and meet the NX-Optimizer Team!</p>
-                <div class="button-container"><a href="https://discord.gg/V7WDfAXPxp" target="_blank" class="discord-button">Join Discord <i class="fa-brands fa-discord" style="font-size: 24px;"></i></a></div>
+                <div class="button-container"><a href="https://discord.gg/V7WDfAXPxp" target="_blank" class="discord-button">Join Discord <i class="fa-brands fa-discord"></i></a></div>
             </div>
 
             <div class="right-box">
@@ -110,8 +138,8 @@
                 <hr1></hr1>
                 <p class="center">If you’re passionate about this project, consider becoming a member on the NX-Optimizer Patreon or Ko-fi to gain early access to new features before anyone else!</p>
                 <div class="button-container">
-                    <a href="https://www.patreon.com/MaxLastBreath" target="_blank" class="patreon-button">Support on Patreon <i class="fa-brands fa-patreon" style="font-size: 24px;"></i></a>
-                    <a href="https://ko-fi.com/MaxLastBreath" target="_blank" class="kofi-button">Support on Ko-fi <i class="fas fa-ko-fi" style="font-size: 24px;"></i></a>
+                    <a href="https://www.patreon.com/MaxLastBreath" target="_blank" class="patreon-button">Support on Patreon <i class="fa-brands fa-patreon"></i></a>
+                    <a href="https://ko-fi.com/MaxLastBreath" target="_blank" class="kofi-button">Support on Ko-fi <i class="fas fa-ko-fi"></i></a>
                 </div>
             </div>
         </div>
