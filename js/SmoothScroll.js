@@ -4,4 +4,10 @@ function scrollToSection(Name) {
         top: section.offsetTop - 160, 
         behavior: "smooth"
     });
+
+    let sidebar = document.getElementById("sidebar");
+
+    if (sidebar){
+        sidebar.classList.toggle("active");
+    }
 }

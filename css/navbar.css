@@ -28,7 +28,7 @@
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     margin: 0 auto;
@@ -88,11 +88,3 @@
         width: 0px;
     }
 }
-
-@media screen and (max-width: 480px) {
-    .navbar .logo-small {
-        visibility: visible;
-        width: auto;
-    }
-}
-
