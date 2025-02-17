@@ -81,7 +81,7 @@ body {
     right: 10px;
     width: 120px;
     height: 40px;
-    background-image: url('../Pictures/ea.png');
+    background-image: url('/Pictures/ea.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
@@ -93,7 +93,7 @@ body {
     right: 0px;
     width: 120px;
     height: 40px;
-    background-image: url('../Pictures/beta.png');
+    background-image: url('/Pictures/beta.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 

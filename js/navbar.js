@@ -15,9 +15,9 @@ function updateLogo() {
 
 
     if (width < 478) {
-        newSrc = 'Pictures/logo-small.png';
-    }else {
-        newSrc = 'Pictures/logo_main.png';
+        newSrc = '/Pictures/logo-small.png';
+    } else {
+        newSrc = '/Pictures/logo_main.png';
     }
 
     if (PreviousImg != newSrc){

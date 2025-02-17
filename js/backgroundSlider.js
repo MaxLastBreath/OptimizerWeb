@@ -1,4 +1,4 @@
-const bgFolder = "BG/"; 
+const bgFolder = "/BG/"; 
 let currentImageIndex = 0;
 
 function getRandomImage() {
