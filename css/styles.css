@@ -77,11 +77,23 @@ body {
 
 .ea {
     position: absolute;
-    top: 10px;
+    top: 0px;
     right: 10px;
-    width: 100px;
+    width: 120px;
     height: 40px;
     background-image: url('../Pictures/ea.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.beta {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 120px;
+    height: 40px;
+    background-image: url('../Pictures/beta.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; 
