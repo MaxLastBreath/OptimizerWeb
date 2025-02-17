@@ -110,8 +110,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     leftSelect.addEventListener('change', updateImages);
     rightSelect.addEventListener('change', updateImages);
-
-    updateImages();
 });
 
 
