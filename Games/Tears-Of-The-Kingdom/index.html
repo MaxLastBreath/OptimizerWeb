@@ -42,17 +42,18 @@
             </ul>
         </div>
         <script>updateLogo();</script>
+
+        <button class="hamburger" onclick="toggleSidebar()">&#9776;</button>
+        <div class="sidebar" id="sidebar">
+            <ul style="margin-top: 50px">
+                <a href="/" class="logo underline-hover"><img src="/Pictures/logo_main.png" style="height: 35px; margin-left: 15px;" id="logo"></a>
+                <li><a class="custom-nav underline-hover" onclick="scrollToSection('Home')">Home</a></li>
+                <li><a class="custom-nav underline-hover" onclick="scrollToSection('Features')">Features</a></li>
+                <li><a class="custom-nav underline-hover" onclick="scrollToSection('Information')">Information</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <button class="hamburger" onclick="toggleSidebar()">&#9776;</button>
-    <div class="sidebar" id="sidebar">
-        <ul style="margin-top: 50px">
-            <a href="/" class="logo"><img src="/Pictures/logo_main.png" style="height: 35px; margin-left: 15px;" id="logo"></a>
-            <li><a class="custom-nav underline-hover" onclick="scrollToSection('Home')">Home</a></li>
-            <li><a class="custom-nav underline-hover" onclick="scrollToSection('Features')">Features</a></li>
-            <li><a class="custom-nav underline-hover" onclick="scrollToSection('Information')">Information</a></li>
-        </ul>
-    </div>
 
     <div class="focused-container" style="margin-bottom: 120px;">
         <h4 class="center title">The Legend of Zelda: Tears Of The Kingdom</h4>
@@ -174,7 +175,7 @@
         <hr></hr>
 
         <p class="center">
-            <a class="custom-nav" onclick="scrollToSection('Information')">Information</a>
+            <a class="custom-nav" onclick="scrollToSection('Information')">INFORMATION</a>
         </p>
         <p class="center"><i class="fa-solid fa-long-arrow-down"></i></p>
     </div>
