@@ -1,0 +1,59 @@
+.focused-container .title{
+    color: white;
+    margin-top: 300px;
+}
+
+.page-context {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.page-context ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 0;
+}
+
+.page-context li {
+    flex: 1 0 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.option-box {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.299);
+    padding: 25px;
+    border-radius: 25px;
+    width: 350px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+    position: relative;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.option-box b {
+    color: rgb(134, 196, 255);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ffffff30;
+}
+
+.option-box p {
+    font-size: 0.95em;
+}
+
+.option-box:hover {
+    background-color: rgba(0, 0, 0, 0.05); 
+    cursor: pointer;
+    border: 2px solid rgb(91, 255, 104);
+}

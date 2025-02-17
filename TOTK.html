@@ -1,37 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NX Optimizer</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/ImgSli.css">
-    <script>
-        const imageNames = [
-            "TOTK/image1.jpg",
-            "TOTK/image2.jpg",
-            "TOTK/image3.jpg",
-        ];     
-    </script>
-    <script src="js/backgroundSlider.js"></script>
-    <script src="js/ImageSlider.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NX Optimizer</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/ImgSli.css">
+        <link rel="stylesheet" href="css/ImageBox.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/subpage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <script>
+            const imageNames = [
+                "TOTK/image1.jpg",
+                "TOTK/image2.jpg",
+                "TOTK/image3.jpg",
+            ];     
+        </script>
+        <script src="js/backgroundSlider.js"></script>
+        <script src="js/ImageSlider.js"></script>
+        <script src="js/navbar.js"></script>
+        <script src="js/navbarScroll.js"></script>
+        <script src="js/SmoothScroll.js"></script>
+    </head>
 
 <body>
-    <div class="background-images fixed-pos">
+    <div class="background-images absolute-pos">
         <img src="" alt="Background Image">
     </div>
 
-    <div id="directory">
-        <a href="index.html">Home</a>
-        <a href="https://github.com/MaxLastBreath/TOTK-mods/releases">Download</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img src="Pictures/logo_main.png" style="height: 35px;" id="logo"></a>
+            <ul class="nav-links">
+                <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-solid fa-file-pen"></i></a></li>
+                <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://discord.gg/V7WDfAXPxp" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+                <li><a href="https://www.patreon.com/c/MaxLastBreath" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
+                <li><a href="https://ko-fi.com/MaxLastBreath" target="_blank"><i class="fas fa-ko-fi"></i></a></li>
+            </ul>
+        </div>
+        <script>updateLogo();</script>
+    </nav>
+
+    <div class="focused-container" style="margin-bottom: 120px;">
+        <h4 class="center title">The Legend of Zelda: Tears Of The Kingdom</h4>
+        <hr></hr> 
+        <p><strong>UltraCam:</strong> UltraCam is a mod developed by MaxLastBreath that enhances the game's performance by enabling smoother framerates and higher resolutions within its internal engine. It also introduces a drone-like camera view (FreeCam) for users to explore Photo or Video creation at their leisure. The Early Access version includes a comprehensive <strong>in-game menu</strong>, a First-Person Mode, and a reshade-like menu with advanced options to further enhance your graphics experience.</p> 
+        <hr></hr>
+        <h1 style="margin-top: 100px;">Supported Features</h1>
+        <hr></hr>
+        <div class="page-context">
+            <ul>
+                <li><div class="option-box"><b>Dynamic Framerate</b>Allows the game to run at over 30 FPS up to 240FPS without speeding up or slowing down.</div></li>
+                <li><div class="option-box"><b>Internal Resolution</b>Changes the rendering resolution on an engine level. Allowing the game to run at 1440P, 4K, 8K or Higher.</div></li>
+                <li><div class="option-box"><b>Shadow Resolution</b>Changes the in-game shadow resolution allowing the game to render shadows at higher than native resolution, allowing shadows such as 1024x1024, 2048x2048, 4096x4096 and 8192x8192.</div></li>
+                <li><div class="option-box"><b>Hide Game UI</b>Allows you to hide all of the In-Game UI, in order to take better Screenshots or make the game more immersive..</div></li>
+                <li><div class="option-box"><b>Camera Speed</b>Allows you to customize your camera speed to your desire.</div></li>
+                <li><div class="option-box"><b>Configuration</b>Supports Configuration with an injected config file.</div></li>
+                <li><div class="option-box"><b>UltraCam (FreeCam)</b>Supports FreeCam, allowing you to get a drone-like view of the world.</div></li>
+                <li><div class="option-box"><b>Sequencer (FreeCam)</b>Allows you to capture keyframes and interpolate between them, making it easier to create cinematic video shots.</div></li>
+                <li><div class="option-box"><b>Benchmark</b>Supports Benchmarks, allowing you to test your framerate or Switch/PC Stability.</div></li>
+                <li><div class="option-box"><div class="ea"></div><b>First Person</b>Transforms the game in First Person Mode.</div></li>
+                <li><div class="option-box"><b>Time Control</b>Allows you to change the time of day during FreeCam. Also Allows you to change the speed of day.</div></li>
+                <li><div class="option-box"><div class="ea"></div><b>Weather Control</b>Control the Weather Freely During FreeCam.</div></li>
+                <li><div class="option-box"><div class="ea"></div><b>Overlay Menu</b>Supports UltraCam Overlay Menu.</div></li>
+                <li><div class="option-box"><div class="ea"></div><b>In-Game Cheats</b>Supports UltraCam In-Game Cheats.</div></li>
+                <li><div class="option-box"><b>Actor Spawner</b>Supports UltraCam Actor Spawner.</div></li>
+                <li><div class="option-box"><b>Debug Console</b>Supports UltraCam Console.</div></li>
+                <li><div class="option-box"><div class="ea"></div><b>Effects Overlay</b>Supports UltraCam Console.</div></li>
+            </ul>
+        </div>
+        <hr></hr>
+
+        <p class="center">
+            <a class="custom-nav" onclick="scrollToSection('Information')">Information</a>
+        </p>
+        <p class="center"><i class="fa-solid fa-long-arrow-down"></i></p>
     </div>
 
-    <header>
-        <img src="Pictures/optimizer_logo_active.png" alt="Banner" class="banner-image">
-    </header>
-
-    <div class="content-area">
+    <div class="content-area" id="Information">
         <div class="container">
             <div class="left-box">
                 <h3>FREE CAMERA</h3>
@@ -75,6 +124,7 @@
         </section>
     </div>
 
+    <hr></hr>
     <footer>
         <p>NX-Optimizer, Ultracam © 2025 MaxLastBreath. All rights reserved.</p>
         <p>This is an independent, third-party project developed through reverse engineering. </p>
