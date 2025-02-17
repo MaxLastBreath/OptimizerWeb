@@ -91,4 +91,27 @@ document.addEventListener('DOMContentLoaded', function() {
         
         console.log("Zoom", scale, "CX", containerRect.width, "CY", containerRect.height, "BX", imageBoundsRect.width, "BY", imageBoundsRect.height, "TransformedX", constrainedOffsetX, "TransformedY", constrainedOffsetY)
     });
+
+    const beforeImage = document.getElementById('before-image');
+    const afterImage = document.getElementById('after-image');
+    const leftSelect = document.getElementById('left-select');
+    const rightSelect = document.getElementById('right-select');
+
+    function updateImages() {
+        const leftValue = leftSelect.value;
+        const rightValue = rightSelect.value;
+
+        console.log('Left selection:', leftValue);
+        console.log('Right selection:', rightValue);
+
+        beforeImage.src = `/Comparison/TOTK/${leftValue}.jpg?timestamp=${Date.now()}`;
+        afterImage.src = `/Comparison/TOTK/${rightValue}.jpg?timestamp=${Date.now()}`;
+    }
+
+    leftSelect.addEventListener('change', updateImages);
+    rightSelect.addEventListener('change', updateImages);
+
+    updateImages();
 });
+
+

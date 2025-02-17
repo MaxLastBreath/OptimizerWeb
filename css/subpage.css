@@ -1,9 +1,12 @@
 :root {
     --game-nav: #1a1a1aad;
+    --box-header-border: #ffffff30;
+    --option-box: rgb(255, 255, 133);
+    --title: white;
 }
 
 .focused-container .title{
-    color: white;
+    color: var(--title);
     margin-top: 300px;
 }
 
@@ -43,13 +46,14 @@
     margin-bottom: 25px;
     position: relative;
     transition: background-color 0.3s ease, border-color 0.3s ease, max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .option-box b {
     color: rgb(152, 255, 255);
     font-size: 1.2em;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ffffff30;
+    border-bottom: 1px solid var(--box-header-border);
 }
 
 .option-box p {
@@ -67,7 +71,7 @@
 .option-box:hover {
     background-color: rgba(0, 0, 0, 0.211);  
     cursor: pointer;
-    border: 2px solid rgb(111, 255, 123);
+    border: 2px solid var(--option-box);
 }
 
 .content {
@@ -96,8 +100,7 @@
 }
 
 .read-more:hover {
-    border-color: white;
-    color: rgb(255, 255, 255);
+    border-color: var(--option-box);
 }
 
 .underline-hover::after {

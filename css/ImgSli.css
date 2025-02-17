@@ -105,9 +105,22 @@
 }
 
 .label-left {
-    left: 10px;
+    position: relative;
+    right: 0;
 }
 
 .label-right {
-    right: 10px;
+    position: relative;
+    left: 0;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
 }

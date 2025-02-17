@@ -59,7 +59,7 @@
     <div class="focused-container" style="margin-bottom: 120px;">
         <h4 class="center title">The Legend of Zelda: Tears Of The Kingdom</h4>
         <hr></hr> 
-        <p><strong>UltraCam:</strong> UltraCam is a mod developed by MaxLastBreath that enhances the game's performance by enabling smoother framerates and higher resolutions within its internal engine. It also introduces a drone-like camera view (FreeCam) for users to explore Photo or Video creation at their leisure. The Early Access version includes a comprehensive <strong>in-game menu</strong>, a First-Person Mode, and a reshade-like menu with advanced options to further enhance your graphics experience.</p> 
+        <p><strong>UltraCam:</strong> UltraCam is a mod developed by MaxLastBreath that enhances the game's performance by enabling smoother framerates and higher resolutions within its internal engine. It also introduces a drone-like camera view (FreeCam) for users to explore Photo or Video creation at their leisure. The Early Access version includes a comprehensive <strong>in-game menu</strong>, a First-Person Mode and a reshade-like menu with advanced options to further enhance your graphics experience.</p> 
         <hr></hr>
 
         <h1 style="margin-top: 100px;">FEATURES</h1>
@@ -229,15 +229,30 @@
 
             <div class="bottom-box">
                 <h3>GRAPHICAL IMPROVEMENTS</h3>
-                <p>Increasing the Resolution of your favorite Switch games, allowing them to run at higher resolutions with less artifacts.</p>
+                <p class="center">Comparison between different Internal Resolutions.</p>
+                <div class="slider-container">
+                    <select id="left-select">
+                        <option value="1080p" selected>1080p</option>
+                        <option value="1440p">1440p</option>
+                        <option value="4K">4K</option>
+                        <option value="8K">8K</option>
+                    </select>
+                    
+                    <select id="right-select">
+                        <option value="1080p">1080p</option>
+                        <option value="1440p">1440p</option>
+                        <option value="4K">4K</option>
+                        <option value="8K" selected>8K</option>
+                    </select>
+                </div>
                 <div class="ImageBounds">
                     <div class="ImageComparer">
                         <div class="box">
-                            <div class="image-label label-left">8K</div>
-                            <div class="before"><img alt="" src="/Comparison/TOTK/8k.jpg"></div>
-                            <div class="slider"><button></button></div>
-                            <div class="image-label label-right">1080p</div>
-                            <div class="after"><img alt="" src="/Comparison/TOTK/1080p.jpg"></div>
+                            <div class="before"><img id="before-image" src="/Comparison/TOTK/1080p.jpg"></div>
+                                <div class="slider">
+                                    <button></button>
+                                </div>
+                            <div class="after"><img id="after-image" src="/Comparison/TOTK/8k.jpg"></div>
                         </div>
                     </div>
                 </div>
