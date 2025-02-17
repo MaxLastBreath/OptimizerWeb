@@ -135,7 +135,11 @@
     .hamburger {
         display: block;
     }
-    .sidebar.active + .content {
-        margin-left: 0;
+}
+
+@media (max-width: 450px) {
+    .option-box{
+        width: 350;
     }
 }
+
