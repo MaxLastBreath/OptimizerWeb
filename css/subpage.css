@@ -52,6 +52,14 @@
     font-size: 0.95em;
 }
 
+.option-box ul {
+    list-style-type: disc;
+    padding-left: 7px;
+    border-bottom: 1px solid #19c6ff28;
+    margin-top: 6px;
+    padding-bottom: 6px;
+}
+
 .option-box:hover {
     background-color: rgba(0, 0, 0, 0.05); 
     cursor: pointer;
