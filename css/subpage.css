@@ -139,7 +139,7 @@
 
 @media (max-width: 450px) {
     .option-box{
-        width: 350;
+        width: 100%;
     }
 }
 
