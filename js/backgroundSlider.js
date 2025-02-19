@@ -21,6 +21,9 @@ function fadeOutAndChange(newImageIndex) {
         console.error("No existing image found in container!");
         return;
     }
+    else {
+        currentImg.addEventListener('transitionend', () => currentImg.remove());
+    }
 
     const newImg = document.createElement('img');
     newImg.src = `${bgFolder}${imageNames[newImageIndex]}`;
@@ -33,7 +36,6 @@ function fadeOutAndChange(newImageIndex) {
     newImg.style.opacity = "0";
     newImg.style.filter = "blur(3px)";
     newImg.style.transition = "opacity 1s ease-in-out";
-
 
     container.appendChild(newImg);
 
