@@ -15,6 +15,13 @@
     z-index: 99;
 }
 
+.sidebar .logo{
+    height: 35px; 
+    margin-left: 20px; 
+    top: 3dvb; 
+    position: fixed;
+}
+
 .sidebar.active {
     transform: translateX(0);
 }
@@ -36,7 +43,7 @@
 
 .hamburger {
     position: fixed;
-    top: 15px;
+    top: 30px;
     left: 15px;
     font-size: 30px;
     color: white;
@@ -49,4 +56,34 @@
 
 .nav-container {
     justify-content: right;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .sidebar .logo {
+        margin-left: 15px;
+        margin-top: 90px;
+    }
+
+    .sidebar ul{
+        margin-top: 90px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        transform: translateX(0);
+    }
+
+    .sidebar.active + .content {
+        margin-left: 250px;
+    }
+
+    .navbar {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+    }
 }

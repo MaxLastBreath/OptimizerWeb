@@ -6,6 +6,7 @@
     background: var(--transparent);
     color: white;
     padding: 25px;
+    height: 40px;
     z-index: 1000;
     transition: background-color 0.3s ease-in-out;
 }

@@ -120,20 +120,8 @@
 }
 
 @media (min-width: 768px) {
-    .sidebar {
-        transform: translateX(0);
-    }
     .content {
         margin-left: 250px;
-    }
-    .sidebar.active + .content {
-        margin-left: 250px;
-    }
-}
-
-@media (max-width: 767px) {
-    .hamburger {
-        display: block;
     }
 }
 
