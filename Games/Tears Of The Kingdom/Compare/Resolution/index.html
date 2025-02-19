@@ -33,7 +33,43 @@
         <script src="/js/navbarScroll.js"></script>
         <script src="/js/SmoothScroll.js"></script>
         <script src="/js/FadeOutUrl.js"></script>
+        <script src="/js/ImageSliderTemplate.js"></script>
+        
+        <script> // Define arrays Here.
 
+            // Default Array
+            const ArrayOptions = [
+                { name: "1080p", value: "TOTK/1080p" },
+                { name: "1440p", value: "TOTK/1440p" },
+                { name: "4K", value: "TOTK/4K" },
+                { name: "8K", value: "TOTK/8k" }
+            ];
+
+            const AO = [
+                { name: "720p", value: "TOTK/AO/720p" },
+                { name: "8k", value: "TOTK/AO/8k" },
+            ];
+
+
+            const buttons = [
+                { array: ArrayOptions, label: "Resolution", section: "Resolution" },
+                { array: AO, label: "Ambient Occlusion", section: "AO" },
+            ];
+
+            document.addEventListener("DOMContentLoaded", function() {
+                LoadArray = ArrayOptions;
+                
+                const hash = window.location.hash;
+
+                if (hash.includes("#AmbientOcclusion") | hash.includes("#AO")){
+                    LoadArray = AO;
+                }
+
+                populateSelect(LoadArray);
+                buttons.forEach(button => createButton(button.label, button.array, button.section));
+            });
+
+        </script>
     </head>
 
     <body class="content" id="Home">
@@ -58,43 +94,45 @@
         <div class="focused-container page-context">
             <div class="center title title-button" onclick="fadeOutAndRedirect('/Games/Tears Of The Kingdom/#Information')"> <h4>The Legend of Zelda:</h4><h2>Tears Of The Kingdom</h2></div>
             <hr></hr> 
+            <h1>Comparison Pages</h1>
+            <hr style="width: 50%; margin-top: 0; margin-bottom: 20px;"></hr> 
+
+
             <div class="button-compare">
                 <button onclick="fadeOutAndRedirect('/Games/Tears%20Of%20The%20Kingdom/Compare/Resolution/')">Resolution</button>
                 <button onclick="fadeOutAndRedirect('/Games/Tears%20Of%20The%20Kingdom/Compare/Shadows/')">Shadows</button>
             </div>
         </div>
 
+        <!--Dropdown Template -->
         <div class="content-area">
             <div class="bottom-box">
-                <h3 class="center">Comparison between different UltraCam Resolutions.</p>
+                <h3 class="center">Comparison between different UltraCam Resolutions.</h3>
+                <hr style="width: 50%; margin-top: 0; margin-bottom: 20px;"></hr> 
+                
+                <div class="button-compare" id="button-container"></div>
+                
                 <div class="slider-container">
-                    <select id="left-select">
-                        <option value="1080p" selected>1080p</option>
-                        <option value="1440p">1440p</option>
-                        <option value="4K">4K</option>
-                        <option value="8k">8K</option>
+                    <select id="left-select" class="resolution-select">
                     </select>
                     
-                    <select id="right-select">
-                        <option value="1080p">1080p</option>
-                        <option value="1440p">1440p</option>
-                        <option value="4K">4K</option>
-                        <option value="8k" selected>8K</option>
+                    <select id="right-select" class="resolution-select">
                     </select>
                 </div>
+    
                 <div class="ImageBounds">
                     <div class="ImageComparer">
                         <div class="box">
                             <div class="before"><img id="before-image" src="/Comparison/TOTK/1080p.jpg" alt="Tears Of The Kingdom 1080p, 1440p, 4k, 8k, 16k resolution"></div>
-                                <div class="slider">
-                                    <button></button>
-                                </div>
+                            <div class="slider">
+                                <button></button>
+                            </div>
                             <div class="after"><img id="after-image" src="/Comparison/TOTK/8k.jpg" alt="Tears Of The Kingdom (TOTK) 1080p, 1440p, 4k, 8k, 16k resolution"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    
     </body>
 </html>

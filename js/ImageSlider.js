@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Left selection:', leftValue);
         console.log('Right selection:', rightValue);
 
-        beforeImage.src = `/Comparison/TOTK/${leftValue}.jpg?timestamp=${Date.now()}`;
-        afterImage.src = `/Comparison/TOTK/${rightValue}.jpg?timestamp=${Date.now()}`;
+        beforeImage.src = `/Comparison/${leftValue}.jpg?timestamp=${Date.now()}`;
+        afterImage.src = `/Comparison/${rightValue}.jpg?timestamp=${Date.now()}`;
     }
 
     leftSelect.addEventListener('change', updateImages);
