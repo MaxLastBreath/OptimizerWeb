@@ -141,7 +141,7 @@ body {
 
 .content-area {
     flex-grow: 1;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 20px auto;
     padding: 0 20px;
 }
@@ -254,6 +254,20 @@ p {
     color: #00b7ff;
     text-decoration: none;
     transition: color 0.3s ease;
+}
+
+body {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.content-fade-out {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.content-fade-in {
+    opacity: 1;
 }
 
 .download-link:hover, .contact-link:hover {

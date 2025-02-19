@@ -7,7 +7,7 @@ function scrollToSection(Name) {
 
     let sidebar = document.getElementById("sidebar");
 
-    if (sidebar){
+    if (sidebar.contains("active")){
         sidebar.classList.toggle("active");
     }
 }

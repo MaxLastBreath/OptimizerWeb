@@ -9,6 +9,11 @@ function updateLogo() {
 
     const width = window.innerWidth;
     const logo = document.getElementById('logo');
+
+    if (!logo){
+        return;
+    }
+    
     let newSrc;
 
     console.log('Window resized!', width);
