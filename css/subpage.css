@@ -2,11 +2,9 @@
     --game-nav: #1a1a1aad;
     --box-header-border: #ffffff30;
     --option-box: rgb(255, 255, 133);
-    --title: white;
 }
 
-.focused-container .title{
-    color: var(--title);
+.focused-container {
     margin-top: 300px;
 }
 

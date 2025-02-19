@@ -5,12 +5,15 @@
     --body-color: rgb(31, 31, 48);
     --text-color: rgb(230, 230, 230);
     --text-color-2: rgb(0, 183, 255);
+    --click-color: rgb(255, 255, 255);
     --border-color: rgba(221, 221, 221, 0.502);
     --border-color-2: rgb(0, 183, 255);
     --transparent: rgba(0, 183, 255, 0);
     --icon-hover: rgba(0, 183, 255);
     --nav-bar: rgba(12, 11, 34, 0.473);
     --footer: rgba(27, 34, 39, 0.482);
+    --title: rgb(255, 255, 255);
+    --title_2: rgb(75, 255, 198);
 }
 
 body {
@@ -46,6 +49,57 @@ body {
     pointer-events: none;
 }
 
+/* Title Animation and Title Colors */
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title h4 {
+    color: var(--title);
+    text-shadow: 
+    -3px -0px 0 rgb(27, 85, 89),  
+     2px -0px 0 black,  
+    -3px  2px 0 black,  
+     0px  2px 0 black; 
+}
+
+.title h2 {
+    font-size: 30px;
+    color:var(--title_2);
+    text-shadow: 
+    -4px -0px 0 rgb(27, 57, 89),  
+     2px -0px 0 black,  
+    -4px  2px 0 black,  
+     0px  2px 0 black; 
+}
+
+.title-button {
+    cursor: pointer;
+}
+
+.title-button h1,
+.title-button h2,
+.title-button h3,
+.title-button h4 {
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.title-button:hover h1,
+.title-button:hover h2,
+.title-button:hover h4,
+.title-button:hover h3 {
+    color: var(--click-color);
+    text-shadow: none;
+    transform: scale(1.1) translateY(-5px);
+    letter-spacing: 1px;
+}
+
+.project_info {
+    margin-bottom: 100px;
+}
+
+/* Background Images */
 .bg-image {
     filter: blur(2px);
     object-fit: cover;
@@ -69,10 +123,6 @@ body {
     margin: 0 auto;
     object-fit: contain;
     padding: 100px 0;
-}
-
-.project_info {
-    margin-bottom: 100px;
 }
 
 .ea {
@@ -144,6 +194,12 @@ body {
     max-width: 1400px;
     margin: 20px auto;
     padding: 0 20px;
+}
+
+.content-area p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 .focused-container {
