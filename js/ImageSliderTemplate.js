@@ -1,4 +1,31 @@
 
+
+function AttachImageSlider(TargetContainer){
+    const htmlContent = `
+    <div class="button-compare" id="button-container"></div>
+
+    <div class="slider-container">
+        <select id="left-select" class="resolution-select"></select>
+        <select id="right-select" class="resolution-select"></select>
+    </div>
+
+    <div class="ImageBounds">
+        <div class="ImageComparer">
+            <div class="box">
+                <div class="before"><img id="before-image" src="" alt="Tears Of The Kingdom 1080p, 1440p, 4k, 8k, 16k resolution"></div>
+                <div class="slider">
+                    <button></button>
+                </div>
+                <div class="after"><img id="after-image" src="" alt="Tears Of The Kingdom (TOTK) 1080p, 1440p, 4k, 8k, 16k resolution"></div>
+            </div>
+        </div>
+    </div>
+    `;
+
+    const container = document.getElementById(TargetContainer);
+    container.innerHTML = htmlContent;
+}
+
 function populateSelect(options, selectedLeft = null, selectedRight = null) {
     const selectElement_left = document.getElementById('left-select');
     const selectElement_right = document.getElementById('right-select');
