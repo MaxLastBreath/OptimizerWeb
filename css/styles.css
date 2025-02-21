@@ -7,7 +7,7 @@
     --text-color-2: rgb(0, 183, 255);
     --click-color: rgb(255, 255, 255);
     --border-color: rgba(221, 221, 221, 0.502);
-    --border-color-2: rgb(0, 183, 255);
+    --border-color-2: rgba(0, 183, 255, 0.463);
     --transparent: rgba(0, 183, 255, 0);
     --icon-hover: rgba(0, 183, 255);
     --nav-bar: rgba(12, 11, 34, 0.473);
@@ -175,6 +175,15 @@ body {
     background:linear-gradient(to bottom, var(--bg-color-grad)35%, var(--bg-color)85%);
     padding: 20px;
     border: 1px solid var(--border-color-2);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gradiant-box {
+    background:linear-gradient(to bottom, var(--bg-color-grad)15%, var(--bg-color)85%);
+    border: 1px solid var(--border-color-2);
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
 }

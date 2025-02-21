@@ -1,0 +1,80 @@
+:root {
+    --controls: rgba(75, 201, 255, 0.282);
+    --controls-text: rgb(255, 255, 255);
+    --controls-b-text: rgb(195, 150, 255);
+    --border-color-table: rgba(15, 110, 165, 0.251);;
+}
+
+.controls-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.controls-table {
+    width: 70%;
+    border-collapse: separate;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.controls-table th, .controls-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid var(--border-color-table);
+}
+
+.controls-table th {
+    background-color: var(--controls);
+    color: var(--controls-text);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.controls-table tr:nth-child(even) {
+    background-color: #ffffff00;
+}
+
+.controls-table tr:hover {
+    background-color: #4f4b4b40;
+}
+
+.controls-table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.controls-table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.controls-table b {
+    color: var(--controls-b-text);
+    font-size: 16px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.button-container button {
+    border: 2px solid var(--border-color-2);
+    border-radius: 12px;
+    padding: 7px 10px;
+    color: white;
+    background: transparent;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+    font-size: 25px;
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.button-container button:hover {
+    border-color: var(--option-box);
+    letter-spacing: 1px;
+}

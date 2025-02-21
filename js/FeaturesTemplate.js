@@ -80,6 +80,3 @@ function FeatureJsonLoad(Location){
     .then(data => addFeatures(data))
     .catch(error => console.error("Error loading features:", error));
 }
-
-
-
