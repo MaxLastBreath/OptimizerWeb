@@ -21,12 +21,18 @@
         <link rel="stylesheet" href="/css/sidebar.css">
         <link rel="stylesheet" href="/css/subpage.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
+        
         <script>
             const imageNames = [
                 "TOTK/image1.jpg",
                 "TOTK/image2.jpg",
                 "TOTK/image3.jpg",
-            ];     
+            ];   
+
+            document.addEventListener("DOMContentLoaded", function () {
+                FeatureJsonLoad("/json/Tears Of The Kingdom/Features.json");
+            });
         </script>
         <script src="/js/backgroundSlider.js"></script>
         <script src="/js/ImageSlider.js"></script>
@@ -34,9 +40,10 @@
         <script src="/js/navbarScroll.js"></script>
         <script src="/js/SmoothScroll.js"></script>
         <script src="/js/sidebar.js"></script>
-        <script src="/js/readmore.js"></script>
         <script src="/js/FadeOutUrl.js"></script>
         <script src="/js/autofooter.js"></script>
+        <script src="/js/Features.js"></script>
+
     </head>
 
 <body class="content" id="Home">
@@ -75,134 +82,12 @@
 
         <h1 style="margin-top: 100px;">FEATURES</h1>
         <hr></hr>
+
+        <!-- Features Container -->
         <div class="page-context" id="Features">
-            <ul>
-                <li><div class="option-box"><b>Performance</b>
-                    <ul>• Dynamic Framerate 30-240. 60 FPS+</ul>
-                    <ul>• Forced Triple Buffer.</ul>
-                </div></li>
-                <li><div class="option-box"><b>Benchmark</b>
-                    <ul>• Kakariko</ul>
-                    <ul>• Great Sky Island</ul>
-                    <ul>• Lookout Landing</ul>
-                    <div class="more-content">
-                        <ul>• Goron City</ul>
-                        <ul>• Korok Forest</ul>
-                        <ul>• Zora Domain</ul>
-                        <ul>• Depths</ul>
-                    </div>
-                    <button class="read-more">Expand</button>
-                </div></li>
-                
-                <li><div class="option-box"><b>Graphics</b>
-                    <ul>• Internal Resolution up to 10k</ul>
-                    <ul>• Shadow Resolution up to 8192x8192</ul>
-                    <ul>• Quality Improvements</ul>
-                    <div class="more-content">
-                        <ul>• Remove FXAA</ul>
-                        <ul>• Remove Depth of Field</ul>
-                        <ul>• Fog Reduction</ul>
-                        <ul>• Shaders (Early Access)</ul>
-                    </div>
-                    <button class="read-more">Expand</button>
-                </div></li>
-
-                <li><div class="option-box"><b>Configuration</b>
-                    <ul>• Camera Speed</ul>
-                    <ul>• Time of Day Speed</ul>
-                    <ul>• FPS</ul>
-                    <ul>• Resolution/Shadows</ul>
-                </div></li>
-                
-                <li><div class="option-box"><b>UltraCam (FreeCam)</b>
-                    <ul>• Photo Mode (FreeCam)</ul>
-                    <ul>• Keyframe System for Sequences</ul>
-                    <ul>• Hide UI, in real time</ul>
-                    <div class="more-content">
-                        <ul>• FreeCam Freeze Ai (Pause)</ul>
-                        <ul>• Benchmarks</ul>
-                        <ul>• Time Control</ul>
-                        <ul>• Actor Camera (Early Access)</ul>
-                    </div>
-                    <button class="read-more">Expand</button>
-
-                </div></li>
-
-                <li><div class="option-box"><b>Command Console</b>
-                    <ul>• Actor Spawner</ul>
-                    <ul>• Save/Load Sequence</ul>
-                    <ul>• Teleport XYZ</ul>
-                    <div class="more-content">
-                        <ul>• Read Cordinates</ul>
-                        <ul>• Set Time</ul>
-                        <ul>• Set Time Speed</ul>
-                        <ul>• Pause Game</ul>
-                        <ul>• Kill Player</ul>
-                        <ul>• Heal Player</ul>
-                        <ul>• Set Fov</ul>
-                        <ul>• And More...</ul>
-                    </div>
-                    <button class="read-more">Expand</button>
-                </div></li>
-
-                <li><div class="option-box"><div class="ea"></div><b>Overlay Menu</b>
-                    <ul>• Actor Spawner Menu</ul>
-                    <ul>• Graphics Menu</ul>
-                    <ul>• Benchmark Menu/Overlay</ul>
-                    <div class="more-content">
-                        <ul>• FreeCam Menu</ul>
-                        <ul>• Cheats Menu</ul>
-                        <ul>• Time and Weather Menu</ul>
-                        <ul>• Actor Container Menu</ul>
-                        <ul>• Effects Menu</ul>
-                        <ul>• FPS Overlay</ul>
-                        <ul>• DPS Counter</ul>
-                        <ul>• Stamina Bar</ul>
-                        <ul>• Force BloodMoon Weather</ul>
-                        <ul>• Force Custom Idle Animations</ul>
-                        <ul>• And More..</ul>
-                    </div>
-                    <button class="read-more">Expand</button>
-                </div></li>
-
-                <li><div class="option-box"><div class="ea"></div><b>Cheat Menu</b>
-                    <ul>• Auto Attach Last Item to Bow</ul>
-                    <ul>• Health Regen</ul>
-                    <ul>• GodMode</ul>
-                    <div class="more-content">
-                        <ul>• Game Speed 0.25-10x</ul>
-                        <ul>• Run/Walk Speed 0-100x</ul>
-                        <ul>• Climbing Speed 0-25x</ul>
-                        <ul>• Max/Current HP Manipulation</ul>
-                        <ul>• Weapon Durability 0-30x</ul>
-                        <ul>• Stamina Drain 0.0-25x</ul>
-                        <ul>• Damage Dealt 0.1-100x</ul>
-                        <ul>• Damage Taken 0.1-100x</ul>
-                        <ul>• Gravity 0.1-100x</ul>
-                        <ul>• Rupee Add/Remove</ul>
-                        <ul>• Ignore Gloom</ul>
-                        <ul>• No Fall Damage</ul>
-                        <ul>• Infinite Stamina</ul>
-                        <ul>• Infinite Durability</ul>
-                        <ul>• And More..</ul>
-                    </div>
-                    <button class="read-more">Expand</button>
-                </div></li>
-
-                <li><div class="option-box"><div class="ea"></div><b>First Person</b>
-                    <ul>• Adds a toggleable First Person Mode.</ul>
-                    <ul>• Player Head is Hidden.</ul>
-                    <ul>• Allows custom Camera Speed.</ul>
-                    <ul>• Allows custom FOV.</ul>
-                </div></li>
-
-                <li><div class="option-box"><div class="ea"></div><b>Randomizer</b>
-                    <ul>• Enemies</ul>
-                    <ul>• Items</ul>
-                    <ul>• Weapons</ul>
-                </div></li>
-            </ul>
+            <ul id="feature-container"></ul>
         </div>
+        
         <hr></hr>
 
         <p class="center">

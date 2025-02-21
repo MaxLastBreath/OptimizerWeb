@@ -1,0 +1,138 @@
+[
+    {
+        "title": "Performance",
+        "ea": false,
+        "bullets": [
+            "Dynamic Framerate 30-240. 60 FPS+",
+            "Forced Triple Buffer"
+        ]
+    },
+    {
+        "title": "Benchmark",
+        "ea": false,
+        "bullets": [
+            "Kakariko",
+            "Great Sky Island",
+            "Lookout Landing",
+            "Goron City",
+            "Korok Forest",
+            "Zora Domain",
+            "Depths"
+        ]
+    },
+    {
+        "title": "Graphics",
+        "ea": false,
+        "bullets": [
+            "Internal Resolution up to 10k",
+            "Shadow Resolution up to 8192x8192",
+            "Quality Improvements",
+            "Remove FXAA",
+            "Remove Depth of Field",
+            "Fog Reduction",
+            "Shaders (Early Access)"
+        ]
+    },
+    {
+        "title": "Configuration",
+        "ea": false,
+        "bullets": [
+            "Camera Speed",
+            "Time of Day Speed",
+            "FPS",
+            "Resolution/Shadows"
+        ]
+    },
+    {
+        "title": "UltraCam (FreeCam)",
+        "ea": false,
+        "bullets": [
+            "Photo Mode (FreeCam)",
+            "Keyframe System for Sequences",
+            "Hide UI, in real time",
+            "FreeCam Freeze Ai (Pause)",
+            "Benchmarks",
+            "Time Control",
+            "Actor Camera (Early Access)"
+        ]
+    },
+    {
+        "title": "Command Console",
+        "bullets": [
+            "Actor Spawner",
+            "Save/Load Sequence",
+            "Teleport XYZ",
+            "Read Coordinates",
+            "Set Time",
+            "Set Time Speed",
+            "Pause Game",
+            "Kill Player",
+            "Heal Player",
+            "Set FOV",
+            "And More..."
+        ]
+    },
+    {
+        "title": "Overlay Menu",
+        "ea": true,
+        "bullets": [
+            "Actor Spawner Menu",
+            "Graphics Menu",
+            "Benchmark Menu/Overlay",
+            "FreeCam Menu",
+            "Cheats Menu",
+            "Time and Weather Menu",
+            "Actor Container Menu",
+            "Effects Menu",
+            "FPS Overlay",
+            "DPS Counter",
+            "Stamina Bar",
+            "Force BloodMoon Weather",
+            "Force Custom Idle Animations",
+            "And More.."
+        ]
+    },
+    {
+        "title": "Cheat Menu",
+        "ea": true,
+        "bullets": [
+            "Auto Attach Last Item to Bow",
+            "Health Regen",
+            "GodMode",
+            "Game Speed 0.25-10x",
+            "Run/Walk Speed 0-100x",
+            "Climbing Speed 0-25x",
+            "Max/Current HP Manipulation",
+            "Weapon Durability 0-30x",
+            "Stamina Drain 0.0-25x",
+            "Damage Dealt 0.1-100x",
+            "Damage Taken 0.1-100x",
+            "Gravity 0.1-100x",
+            "Rupee Add/Remove",
+            "Ignore Gloom",
+            "No Fall Damage",
+            "Infinite Stamina",
+            "Infinite Durability",
+            "And More.."
+        ]
+    },
+    {
+        "title": "First Person",
+        "ea": true,
+        "bullets": [
+            "Adds a toggleable First Person Mode.",
+            "Player Head is Hidden.",
+            "Allows custom Camera Speed.",
+            "Allows custom FOV."
+        ]
+    },
+    {
+        "title": "Randomizer",
+        "ea": true,
+        "bullets": [
+            "Enemies",
+            "Items",
+            "Weapons"
+        ]
+    }
+]
