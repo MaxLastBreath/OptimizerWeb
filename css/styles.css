@@ -95,6 +95,11 @@ body {
     letter-spacing: 1px;
 }
 
+.section-title {
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .project_info {
     margin-bottom: 100px;
 }
