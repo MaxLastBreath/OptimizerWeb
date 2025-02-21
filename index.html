@@ -50,6 +50,7 @@
     <script src="/js/SmoothScroll.js"></script>
     <script src="/js/autofooter.js"></script>
     <script src="/js/GameTemplate.js"></script>
+    <script src="/js/FadeOutUrl.js"></script>
 </head>
 
 <body>
@@ -71,6 +72,7 @@
         <script>updateLogo();</script>
     </nav>
 
+    <!-- Page Information -->
     <div class="focused-container" style="margin-bottom: 120px;">
         <h1 class="center" style="margin-top: 120px; margin-bottom: 35px;">Switch Games Mod Manager</h1>
         <hr></hr>
@@ -78,13 +80,13 @@
         <p><b>The Legend of Zelda: Tears of the Kingdom, Breath Of The Wild, Echoes Of Wisdom, Link's Awakening and More</b></p>
         <p>Featuring Game Optimization, Dynamic Framerate, 60+ FPS, Higher Resolutions, Higher Shadow Resolution, Free Camera, Cheats and More...</p>
         <hr></hr>
-        <ul class="nav-links">
-            <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-solid fa-file-pen"></i></a></li>
-            <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://discord.gg/V7WDfAXPxp" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
-            <li><a href="https://www.patreon.com/c/MaxLastBreath" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
-            <li><a href="https://ko-fi.com/MaxLastBreath" target="_blank"><i class="fas fa-ko-fi"></i></a></li>
-        </ul>
+        <div class="center" style="margin-bottom: 100px;">
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('/Guides/Setup Guide/')">Setup Guide <i class="fa-solid fa-file-pen"></i></a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://github.com/MaxLastBreath/TOTK-mods/releases')">Download <i class="fa-brands fa-github"></i></a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://www.patreon.com/c/MaxLastBreath')">Early Access <i class="fa-brands fa-patreon"></i></a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://discord.com/invite/V7WDfAXPxp')">Discord <i class="fa-brands fa-discord"></i></a>
+        </div>
+
         <p class="center">
             <a class="custom-nav" onclick="scrollToSection('AllGames')">Find Game Pages</a>
         </p>
@@ -92,23 +94,24 @@
     </div>
 
     <div style="margin-top: 150px;" id="AllGames">
-        <h1 class="center">All Games</h1>
+        <h1 class="center section-title">All Games</h1>
         <div class="separate" style="margin-bottom: 25px;"></div>
     </div>
 
-    <!-- Game Template Loader-->
+    <!-- Game Template Loader -->
     <div class="image-container" style="margin-bottom: 120px;" id="game-container"></div>
 
     <h1 class="center" style="margin-bottom: 35px;">Become Apart of The NX-Optimizer Community</h1>
     <div class="separate"></div>
 
-    <div class="content-area">
+    <!-- Find Us -->
+    <div class="content-area" style="max-width: 1400px;" id="Infomartion">
         <div class="container">
             <div class="left-box">
                 <h1>Meet MaxLastBreath on <b style="color: #4e5d99;">Discord</b></h1>
                 <hr1></hr1>
                 <p class="center">Join the ever-growing community on The Way Of The Wind Discord (with over 7500 members) and meet the NX-Optimizer Team!</p>
-                <div class="button-container"><a href="https://discord.gg/V7WDfAXPxp" target="_blank" class="discord-button">Join Discord <i class="fa-brands fa-discord"></i></a></div>
+                <div class="button-container"><a href="https://discord.gg/V7WDfAXPxp" target="_blank" class="discord-button">Join Discord<i class="fa-brands fa-discord"></i></a></div>
             </div>
 
             <div class="right-box">

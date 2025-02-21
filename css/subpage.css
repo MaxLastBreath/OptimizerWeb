@@ -101,7 +101,13 @@
     border-color: var(--option-box);
 }
 
-.underline-hover::after {
+.underline-hover-left {
+    display: flexbox;
+    position: relative;
+    text-decoration: none;
+}
+
+.underline-hover-left::after {
     content: "";
     position: absolute;
     left: 0;
@@ -112,7 +118,7 @@
     transition: width 0.3s ease, left 0.3s ease;
 }
 
-.underline-hover:hover::after {
+.underline-hover-left:hover::after {
     width: 60%;
     left: 0;
 }

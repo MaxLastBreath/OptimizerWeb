@@ -72,10 +72,10 @@
         <div class="sidebar" id="sidebar">
             <ul style>
                 <a href="/"><img src="/Pictures/logo_main.png" class="logo" alt="NX-Optimizer Logo"></a>
-                <li><a class="custom-nav underline-hover" onclick="scrollToSection('Home')">Home</a></li>
-                <li><a class="custom-nav underline-hover" onclick="scrollToSection('Information')">Information</a></li>
-                <li><a class="custom-nav underline-hover" onclick="scrollToSection('Features')">Features</a></li>
-                <li><a class="custom-nav underline-hover" onclick="scrollToSection('Controls')">Controls</a></li>
+                <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Home')">Home</a></li>
+                <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Information')">Information</a></li>
+                <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Features')">Features</a></li>
+                <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Controls')">Controls</a></li>
             </ul>
         </div>
     </nav>
@@ -88,10 +88,15 @@
         <hr></hr>
 
         <p class="center">
-            <a class="custom-nav section-title" onclick="scrollToSection('Information')">INFORMATION</a>
+            <i class="fa-solid fa-arrow-down"></i>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="scrollToSection('Information')">Information</a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="scrollToSection('Features')">Features</a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="scrollToSection('Controls')">Controls</a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://github.com/MaxLastBreath/TOTK-mods/releases/latest')">Download</a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://www.patreon.com/MaxLastBreath')">Early Access</a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://discord.com/invite/V7WDfAXPxp')">Discord</a>
+            <i class="fa-solid fa-arrow-down"></i>
         </p>
-
-        <p class="center"><i class="fa-solid fa-long-arrow-down"></i></p>
     </div>
 
     <!-- Information Section -->
@@ -154,7 +159,7 @@
 
     <!-- Controls Section  -->
     <div class="focused-container gradiant-box" style="margin-top: 70px; max-width: 1200px;" id="Controls">
-        <h1 class="section-title" style="margin-top: 100px;">Mod Controls</h1>
+        <h1 class="section-title" style="margin-top: 100px;">MOD CONTROLS</h1>
         <hr style="width: 25%; margin-top: 5px; margin-bottom: 5px;">
         <p class="center">Controls for UltraCam Tears Of The Kingdom (Mostly Universal).</p>
         <hr style="width: 50%; margin-top: 5px; margin-bottom: 5px;">
@@ -162,6 +167,5 @@
         <div class="button-container" id="button-container-controls"></div>
         <div class="controls-container" id="controls-table"></div>
     </div>
-
 </body>
 </html>

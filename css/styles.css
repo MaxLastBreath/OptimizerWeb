@@ -222,6 +222,10 @@ body {
     margin-left: 12.5%
 }
 
+.focused-container li{
+    margin-bottom: 7px;
+}
+
 .mod-section, .highlight-section, .contact-section {
     border-radius: 8px;
     margin-bottom: 20px;
