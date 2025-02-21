@@ -104,12 +104,45 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Left selection:', leftValue);
         console.log('Right selection:', rightValue);
 
-        beforeImage.src = `/Comparison/${leftValue}.jpg?timestamp=${Date.now()}`;
-        afterImage.src = `/Comparison/${rightValue}.jpg?timestamp=${Date.now()}`;
+        beforeImage.src = `${leftValue}?timestamp=${Date.now()}`;
+        afterImage.src = `${rightValue}?timestamp=${Date.now()}`;
     }
 
     leftSelect.addEventListener('change', updateImages);
     rightSelect.addEventListener('change', updateImages);
 });
+
+function ImageSliderJsonLoad(JsonName) {
+    fetch(JsonName)
+    .then(response => response.json())
+    .then(config => {
+        try {
+            const arrays = config.arrays || {};
+            const buttons = config.buttons || [];
+            const hashMappings = config.hashMappings || {};
+
+            // Default array, can be changed dynamically
+            let LoadArray = arrays[config.defaultArray] || Object.values(arrays)[0];
+
+            const hash = window.location.hash;
+
+            if (hashMappings[hash]) {
+                const arrayKey = hashMappings[hash];
+                LoadArray = arrays[arrayKey] || LoadArray;
+            }
+
+            populateSelect(LoadArray);
+
+            buttons.forEach(button => {
+                const array = arrays[button.array] || []; // Dynamically select array if exists
+                createButton(button.label, array, button.section);
+            });
+
+        } catch (error) {
+            console.error('Error processing config:', error);
+        }
+    })
+    .catch(error => console.error('Error loading JSON:', error));
+}
 
 

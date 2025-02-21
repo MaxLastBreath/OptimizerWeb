@@ -1,0 +1,44 @@
+{
+    "defaultArray": "resolution",
+    "arrays": {
+      "resolution": [
+        { "name": "1080p", "value": "https://imgsli.com/i/6026d8bf-0417-48cd-b869-ddf4e183d558.jpg" },
+        { "name": "1440p", "value": "https://imgsli.com/i/52687b57-73b8-4f30-b387-105c50e77c02.jpg" },
+        { "name": "4K", "value": "https://imgsli.com/i/7b6e0ac5-b3dd-4bc6-8313-fe55a78e8763.jpg" },
+        { "name": "8K", "value": "https://imgsli.com/i/9df3843e-b8fd-4406-b8a2-653f0279cb3f.jpg" }
+      ],
+      "ambientOcclusion": [
+        { "name": "720p", "value": "https://imgsli.com/i/c0039b19-cc8f-4a3e-a67d-3e9c7f0d70da.jpg" },
+        { "name": "1080p (Native)", "value": "https://imgsli.com/i/738c900f-7645-433a-b755-d79877a0226f.jpg" },
+        { "name": "1440p", "value": "https://imgsli.com/i/f851270f-4484-49fb-9b54-27e4500c781a.jpg" },
+        { "name": "4K", "value": "https://imgsli.com/i/d4386321-e568-41c3-9934-f3801d0ea37d.jpg" },
+        { "name": "8K", "value": "https://imgsli.com/i/5c9e8b9f-016d-4a9e-90b9-bac871c7fc92.jpg" }
+      ],
+      "Shadows_1": [
+        { "name": "1024x", "value": "https://imgsli.com/i/1ccaccdf-d78b-49b7-acc8-bc84b2818c76.jpg" },
+        { "name": "2048x", "value": "https://imgsli.com/i/0f3f4e54-0fc6-424f-adff-06e98dfcc27d.jpg" },
+        { "name": "4096x", "value": "https://imgsli.com/i/46e7bd8d-32ce-4827-9012-1ae3a4790d2b.jpg" },
+        { "name": "8192x", "value": "https://imgsli.com/i/d95378da-c092-417a-8148-a3d8f8b38397.jpg" }
+      ],
+      "Shadows_2": [
+        { "name": "1024x", "value": "https://imgsli.com/i/528131ba-1e13-4080-b354-600647e65961.jpg" },
+        { "name": "2048x", "value": "https://imgsli.com/i/b99ff25e-c051-4409-94c3-9f9aa2122e96.jpg" },
+        { "name": "4096x", "value": "https://imgsli.com/i/81282867-9b7f-42ed-a953-494f2615ab95.jpg" },
+        { "name": "8192x", "value": "https://imgsli.com/i/48c31af1-b72b-4208-95b6-ac0ae0281cc9.jpg" }
+      ]
+    },
+    "buttons": [
+      { "array": "resolution", "label": "Resolution", "section": "Resolution" },
+      { "array": "ambientOcclusion", "label": "Ambient Occlusion", "section": "AO" },
+      { "array": "Shadows_1", "label": "Shadows (Distant)", "section": "ShadowsKakariko" },
+      { "array": "Shadows_2", "label": "Shadows (Distant 2)", "section": "ShadowsGSI" }
+    ],
+    "hashMappings": {
+      "#AmbientOcclusion": "ambientOcclusion",
+      "#AO": "ambientOcclusion",
+      "#Resolution": "resolution",
+      "#ShadowsKakariko": "Shadows_1",
+      "#ShadowsGSI": "Shadows_2"
+    }
+  }
+  

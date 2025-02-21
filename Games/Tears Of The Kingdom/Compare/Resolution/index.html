@@ -35,40 +35,10 @@
         <script src="/js/FadeOutUrl.js"></script>
         <script src="/js/ImageSliderTemplate.js"></script>
         
-        <script> // Define arrays Here.
-
-            // Default Array
-            const ArrayOptions = [
-                { name: "1080p", value: "TOTK/1080p" },
-                { name: "1440p", value: "TOTK/1440p" },
-                { name: "4K", value: "TOTK/4K" },
-                { name: "8K", value: "TOTK/8k" }
-            ];
-
-            const AO = [
-                { name: "720p", value: "TOTK/AO/720p" },
-                { name: "8k", value: "TOTK/AO/8k" },
-            ];
-
-
-            const buttons = [
-                { array: ArrayOptions, label: "Resolution", section: "Resolution" },
-                { array: AO, label: "Ambient Occlusion", section: "AO" },
-            ];
-
-            document.addEventListener("DOMContentLoaded", function() {
-                LoadArray = ArrayOptions;
-                
-                const hash = window.location.hash;
-
-                if (hash.includes("#AmbientOcclusion") | hash.includes("#AO")){
-                    LoadArray = AO;
-                }
-
-                populateSelect(LoadArray);
-                buttons.forEach(button => createButton(button.label, button.array, button.section));
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                ImageSliderJsonLoad("/json/Tears Of The Kingdom/ImageSlider.json");
             });
-
         </script>
     </head>
 
@@ -94,14 +64,7 @@
         <div class="focused-container page-context">
             <div class="center title title-button" onclick="fadeOutAndRedirect('/Games/Tears Of The Kingdom/#Information')"> <h4>The Legend of Zelda:</h4><h2>Tears Of The Kingdom</h2></div>
             <hr></hr> 
-            <h1>Comparison Pages</h1>
-            <hr style="width: 50%; margin-top: 0; margin-bottom: 20px;"></hr> 
-
-
-            <div class="button-compare">
-                <button onclick="fadeOutAndRedirect('/Games/Tears%20Of%20The%20Kingdom/Compare/Resolution/')">Resolution</button>
-                <button onclick="fadeOutAndRedirect('/Games/Tears%20Of%20The%20Kingdom/Compare/Shadows/')">Shadows</button>
-            </div>
+            <h1>Comparison Page</h1>
         </div>
 
         <!--Dropdown Template -->
