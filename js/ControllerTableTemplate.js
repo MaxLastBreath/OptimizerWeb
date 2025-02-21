@@ -44,7 +44,7 @@ function generateButtons(location) {
     fetch(location)
         .then(response => response.json())
         .then(data => {
-            const buttonContainer = document.getElementById('button-container');
+            const buttonContainer = document.getElementById('button-container-controls');
             for (const layout in data) {
                 const button = document.createElement('button');
                 button.textContent = `${layout.charAt(0).toUpperCase() + layout.slice(1)}`;

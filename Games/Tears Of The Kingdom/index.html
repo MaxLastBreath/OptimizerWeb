@@ -34,6 +34,10 @@
                 FeatureJsonLoad("/json/Tears Of The Kingdom/Features.json");
                 ControlsJsonLoad("/json/Tears Of The Kingdom/Controls.json")
             });
+
+            document.addEventListener("DOMContentLoaded", function () {
+                ImageSliderJsonLoad("/json/Tears Of The Kingdom/ImageSlider.json");
+            });
         </script>
         <script src="/js/backgroundSlider.js"></script>
         <script src="/js/ImageSlider.js"></script>
@@ -45,6 +49,7 @@
         <script src="/js/autofooter.js"></script>
         <script src="/js/FeaturesTemplate.js"></script>
         <script src="/js/ControllerTableTemplate.js"></script>
+        <script src="/js/ImageSliderTemplate.js"></script>
     </head>
 
 <body class="content" id="Home">
@@ -76,10 +81,11 @@
         </div>
     </nav>
 
+    <!-- Home Title Section -->
     <div class="focused-container" style="margin-bottom: 120px;">
         <div class="title"><h4>The Legend of Zelda: <h2>Tears Of The Kingdom</h2></h4></div>
         <hr></hr> 
-        <p><strong>UltraCam:</strong> UltraCam is a mod developed by MaxLastBreath that enhances the game's performance by enabling framerates over 60 FPS and higher resolutions within its internal engine. It also introduces a drone-like camera view (FreeCam) for users to explore Photo or Video creation at their leisure. The Early Access version includes a comprehensive <strong>in-game menu</strong>, a First-Person Mode and a reshade-like menu with advanced options to further enhance your graphics experience.</p> 
+        <p><strong>UltraCam:</strong> UltraCam is a mod developed by MaxLastBreath that enhances the game's performance by enabling framerates over 60 FPS and higher resolutions within its internal engine. It also introduces a drone-like camera view <B>(FreeCam)</B> for users to explore Photo or Video creation at their leisure. The Early Access version includes a comprehensive <strong>in-game menu</strong>, a <B>First-Person Mode</B> and a<B> </B>reshade-like</B> menu with advanced options to further enhance your gameplay experience.</p> 
         <hr></hr>
 
         <p class="center">
@@ -88,7 +94,8 @@
 
         <p class="center"><i class="fa-solid fa-long-arrow-down"></i></p>
     </div>
-    
+
+    <!-- Information Section -->
     <div class="content-area" id="Information">
         <div class="container">
             <div class="left-box">
@@ -115,63 +122,62 @@
                 </div>
             </div>
 
+            <!-- Image Comparison -->
             <div class="bottom-box">
-                <h3>Graphical Improvements</h3>
-                <hr style="width: 50%; margin-top: 0px;"></hr>
-                <div class="button-compare" style="margin-bottom: 20px;">
-                    <button onclick="fadeOutAndRedirect('/Games/Tears%20Of%20The%20Kingdom/Compare/Resolution/')">More Examples</button>
-                </div>
+                <h3 class="center">Graphical Comparisons.</h3>
+                <hr style="width: 50%; margin-top: 0; margin-bottom: 20px;"></hr> 
+                
+                <div class="button-compare" id="button-container"></div>
+                
                 <div class="slider-container">
-                    <select id="left-select">
-                        <option value="1080p" selected>1080p</option>
-                        <option value="1440p">1440p</option>
-                        <option value="4K">4K</option>
-                        <option value="8k">8K</option>
+                    <select id="left-select" class="resolution-select">
                     </select>
                     
-                    <select id="right-select">
-                        <option value="1080p">1080p</option>
-                        <option value="1440p">1440p</option>
-                        <option value="4K">4K</option>
-                        <option value="8k" selected>8K</option>
+                    <select id="right-select" class="resolution-select">
                     </select>
                 </div>
+
                 <div class="ImageBounds">
                     <div class="ImageComparer">
                         <div class="box">
-                            <div class="before"><img id="before-image" src="/Comparison/TOTK/1080p.jpg" alt="Tears Of The Kingdom 1080p, 1440p, 4k, 8k, 16k resolution"></div>
-                                <div class="slider">
-                                    <button></button>
-                                </div>
-                            <div class="after"><img id="after-image" src="/Comparison/TOTK/8k.jpg" alt="Tears Of The Kingdom (TOTK) 1080p, 1440p, 4k, 8k, 16k resolution"></div>
+                            <div class="before"><img id="before-image" src="" alt="Tears Of The Kingdom 1080p, 1440p, 4k, 8k, 16k resolution"></div>
+                            <div class="slider">
+                                <button></button>
+                            </div>
+                            <div class="after"><img id="after-image" src="" alt="Tears Of The Kingdom (TOTK) 1080p, 1440p, 4k, 8k, 16k resolution"></div>
                         </div>
                     </div>
                 </div>
+                <p class="center">
+                    <a class="custom-nav section-title" onclick="fadeOutAndRedirect('/Games/Tears Of The Kingdom/ImageSlider' + window.location.hash)">Click For Comparison Page</a>
+                </p>
             </div>
         </div>
     </div>
 
-    <!-- Features Container -->
+    <!-- Features Section -->
     <div class="focused-container gradiant-box" style="margin-top: 70px;" id="Features">
         <h1 class="section-title" style="margin-top: 100px;">FEATURES</h1>
         <hr style="width: 25%; margin-top: 5px; margin-bottom: 5px;">
         <p class="center">Supported UltraCam Features for this game.</p>
         <hr style="width: 50%; margin-top: 5px; margin-bottom: 5px;">
-
+        
+        <!-- Features Container -->
         <div class="page-context" style="margin-top: 100px;">
             <ul id="feature-container"></ul>
         </div>
     </div>
 
-
+    <!-- Controls Section  -->
     <div class="focused-container gradiant-box" style="margin-top: 70px; max-width: 1200px;" id="Controls">
         <h1 class="section-title" style="margin-top: 100px;">Mod Controls</h1>
         <hr style="width: 25%; margin-top: 5px; margin-bottom: 5px;">
-        <p class="center">Controls for UltraCam (Mostly Universal)</p>
+        <p class="center">Controls for UltraCam Tears Of The Kingdom (Mostly Universal).</p>
         <hr style="width: 50%; margin-top: 5px; margin-bottom: 5px;">
-        <!-- Controls Table and Button Container -->
-        <div class="button-container" id="button-container"></div>
+        <!-- Controls and Button Controls Containers. -->
+        <div class="button-container" id="button-container-controls"></div>
         <div class="controls-container" id="controls-table"></div>
     </div>
+
 </body>
 </html>
