@@ -58,7 +58,7 @@
     justify-content: right;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
     .hamburger {
         display: block;
     }
@@ -73,7 +73,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
     .sidebar {
         transform: translateX(0);
     }

@@ -34,18 +34,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Touch events
     ImageSliderBounds.addEventListener('touchstart', (e) => {
-        isDragging = true;
-        updateSliderPosition(e.touches[0].clientX);
+        if (e.touches.length === 2) {
+            // Get the initial distance between two fingers
+            const dx = e.touches[0].clientX - e.touches[1].clientX;
+            const dy = e.touches[0].clientY - e.touches[1].clientY;
+            initialDistance = Math.sqrt(dx * dx + dy * dy);
+            initialZoom = zoomLevel;
+        }
     });
-
+    
     ImageSliderBounds.addEventListener('touchmove', (e) => {
-        if (!isDragging) return;
-        e.preventDefault();
-        updateSliderPosition(e.touches[0].clientX);
+        if (e.touches.length === 2) {
+            e.preventDefault();
+    
+            const dx = e.touches[0].clientX - e.touches[1].clientX;
+            const dy = e.touches[0].clientY - e.touches[1].clientY;
+            const newDistance = Math.sqrt(dx * dx + dy * dy);
+    
+            const zoomFactor = newDistance / initialDistance;
+            let newZoom = initialZoom * zoomFactor;
+    
+            zoomLevel = Math.min(Math.max(newZoom, minZoom), maxZoom);
+    
+            container.style.transform = `scale(${zoomLevel})`;
+            sliderBtn.style.transform = `scale(${1.0 / zoomLevel})`;
+        }
     });
-
+    
     ImageSliderBounds.addEventListener('touchend', () => {
-        isDragging = false;
+        initialDistance = 0;
     });
 
     ImageSliderBounds.addEventListener('click', (e) =>{
@@ -53,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
     })
 
     ImageSliderBounds.addEventListener('wheel', (e) => {
-        e.preventDefault();
     
         const scaleFactor = 1.1;
         const zoomIn = e.deltaY < 0;
@@ -88,6 +104,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         container.style.transform = `scale(${scale}) translate(${constrainedOffsetX}px, ${constrainedOffsetY}px)`;
         sliderBtn.style.transform = `scale(${1.0 / zoomLevel})`;
+
+        if (scale > 1.0 && scale != maxZoom){
+            e.preventDefault();
+        }
         
         console.log("Zoom", scale, "CX", containerRect.width, "CY", containerRect.height, "BX", imageBoundsRect.width, "BY", imageBoundsRect.height, "TransformedX", constrainedOffsetX, "TransformedY", constrainedOffsetY)
     });

@@ -52,34 +52,35 @@
         <script src="/js/ImageSliderTemplate.js"></script>
     </head>
 
+
+<nav class="navbar">
+    <div class="nav-container">
+        <ul class="nav-links">
+            <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-solid fa-file-pen"></i></a></li>
+            <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://discord.gg/V7WDfAXPxp" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+            <li><a href="https://www.patreon.com/c/MaxLastBreath" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
+            <li><a href="https://ko-fi.com/MaxLastBreath" target="_blank"><i class="fas fa-ko-fi"></i></a></li>
+        </ul>
+    </div>
+    <script>updateLogo();</script>
+
+    <button class="hamburger" onclick="toggleSidebar()">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+        <ul style>
+            <a href="/"><img src="/Pictures/logo_main.png" class="logo" alt="NX-Optimizer Logo"></a>
+            <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Home')">Home</a></li>
+            <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Information')">Information</a></li>
+            <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Features')">Features</a></li>
+            <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Controls')">Controls</a></li>
+        </ul>
+    </div>
+</nav>
+
 <body class="content" id="Home">
     <div class="background-images absolute-pos">
         <img src="" alt="NX Optimizer Background Images">
     </div>
-
-    <nav class="navbar">
-        <div class="nav-container">
-            <ul class="nav-links">
-                <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-solid fa-file-pen"></i></a></li>
-                <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://discord.gg/V7WDfAXPxp" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
-                <li><a href="https://www.patreon.com/c/MaxLastBreath" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
-                <li><a href="https://ko-fi.com/MaxLastBreath" target="_blank"><i class="fas fa-ko-fi"></i></a></li>
-            </ul>
-        </div>
-        <script>updateLogo();</script>
-
-        <button class="hamburger" onclick="toggleSidebar()">&#9776;</button>
-        <div class="sidebar" id="sidebar">
-            <ul style>
-                <a href="/"><img src="/Pictures/logo_main.png" class="logo" alt="NX-Optimizer Logo"></a>
-                <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Home')">Home</a></li>
-                <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Information')">Information</a></li>
-                <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Features')">Features</a></li>
-                <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Controls')">Controls</a></li>
-            </ul>
-        </div>
-    </nav>
 
     <!-- Home Title Section -->
     <div class="focused-container" style="margin-bottom: 120px;">
@@ -90,12 +91,12 @@
 
         <p class="center">
             <i class="fa-solid fa-arrow-down"></i>
-            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="scrollToSection('Information')">Information</a>
-            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="scrollToSection('Features')">Features</a>
-            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="scrollToSection('Controls')">Controls</a>
-            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://github.com/MaxLastBreath/TOTK-mods/releases/latest')">Download</a>
-            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://www.patreon.com/MaxLastBreath')">Early Access</a>
-            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://discord.com/invite/V7WDfAXPxp')">Discord</a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="scrollToSection('Information')">Information <i class="fa-solid fa-file-pen"></i></a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="scrollToSection('Features')">Features <i class="fas fa-lightbulb"></i></a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="scrollToSection('Controls')">Controls <i class="fas fa-gamepad"></i></a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://github.com/MaxLastBreath/TOTK-mods/releases/latest')">Download <i class="fa-brands fa-github"></i></a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://www.patreon.com/MaxLastBreath')">Early-Access <i class="fa-brands fa-patreon"></i></a>
+            <a class="custom-nav section-title underline-hover" style="margin-left: 10px; margin-right: 10px;" onclick="fadeOutAndRedirect('https://discord.com/invite/V7WDfAXPxp')">Discord <i class="fa-brands fa-discord"></i></a>
             <i class="fa-solid fa-arrow-down"></i>
         </p>
     </div>
