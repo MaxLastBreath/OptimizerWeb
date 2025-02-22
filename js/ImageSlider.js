@@ -32,37 +32,64 @@ document.addEventListener('DOMContentLoaded', function() {
         isDragging = false;
     });
 
-    // Touch events
+    let initialTouchY = 0;
+    let initialTouchX = 0;
+    
     ImageSliderBounds.addEventListener('touchstart', (e) => {
-        if (e.touches.length === 2) {
-            // Get the initial distance between two fingers
-            const dx = e.touches[0].clientX - e.touches[1].clientX;
-            const dy = e.touches[0].clientY - e.touches[1].clientY;
-            initialDistance = Math.sqrt(dx * dx + dy * dy);
-            initialZoom = zoomLevel;
+        if (e.touches.length === 1) {
+            initialTouchY = e.touches[0].clientY;
+            initialTouchX = e.touches[0].clientX;
         }
     });
     
     ImageSliderBounds.addEventListener('touchmove', (e) => {
-        if (e.touches.length === 2) {
-            e.preventDefault();
-    
-            const dx = e.touches[0].clientX - e.touches[1].clientX;
-            const dy = e.touches[0].clientY - e.touches[1].clientY;
-            const newDistance = Math.sqrt(dx * dx + dy * dy);
-    
-            const zoomFactor = newDistance / initialDistance;
-            let newZoom = initialZoom * zoomFactor;
-    
-            zoomLevel = Math.min(Math.max(newZoom, minZoom), maxZoom);
-    
-            container.style.transform = `scale(${zoomLevel})`;
+        e.preventDefault();
+        
+        if (e.touches.length === 1) {
+            const deltaX = e.touches[0].clientX - initialTouchX;
+            const deltaY = e.touches[0].clientY - initialTouchY;
+
+            const scaleFactor = 1.01;
+
+            if (Math.abs(deltaY) > Math.abs(deltaX)) {
+                if (deltaY < 0) {
+                    zoomLevel = Math.max(zoomLevel / scaleFactor, minZoom);
+                } else {
+                    zoomLevel = Math.min(zoomLevel * scaleFactor, maxZoom);
+                }
+            }
+
+            const containerRect = container.getBoundingClientRect();
+            const containerCenterX = containerRect.width / 2;
+            const containerCenterY = containerRect.height / 2;
+
+            const mouseX = e.touches[0].clientX - containerRect.left;
+            const mouseY = e.touches[0].clientY - containerRect.top;
+
+            const offsetX = mouseX - containerCenterX;
+            const offsetY = mouseY - containerCenterY;
+
+            const scale = zoomLevel;
+            const zoomOffsetX = offsetX * (scale - 1);
+            const zoomOffsetY = offsetY * (scale - 1);
+
+            const maxOffsetX = (containerRect.width * scale) / (scale * 10);
+            const maxOffsetY = (containerRect.height * scale) / (scale * 10);
+
+            let constrainedOffsetX = Math.min(Math.max(-zoomOffsetX, -maxOffsetX), maxOffsetX);
+            let constrainedOffsetY = Math.min(Math.max(-zoomOffsetY, -maxOffsetY), maxOffsetY);
+
+            container.style.transform = `scale(${scale}) translate(${constrainedOffsetX}px, ${constrainedOffsetY}px)`;
             sliderBtn.style.transform = `scale(${1.0 / zoomLevel})`;
+
+            initialTouchX = e.touches[0].clientX;
+            initialTouchY = e.touches[0].clientY;
         }
     });
     
     ImageSliderBounds.addEventListener('touchend', () => {
-        initialDistance = 0;
+        initialTouchY = 0;
+        initialTouchX = 0;
     });
 
     ImageSliderBounds.addEventListener('click', (e) =>{
