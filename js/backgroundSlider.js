@@ -55,6 +55,8 @@ function fadeOutAndChange(newImageIndex) {
     newImg.style.opacity = "0";
     newImg.style.filter = "blur(3px)";
     newImg.style.transition = "opacity 1s ease-in-out";
+    newImg.loading = "lazy";
+    newImg.decoding = "async";
 
     container.appendChild(newImg);
 
@@ -89,6 +91,8 @@ function initializeSlider() {
     initialImg.style.left = "0";
     initialImg.style.width = "100%";
     initialImg.style.height = "100%";
+    initialImg.loading = "lazy";
+    initialImg.decoding = "async";
 
     container.appendChild(initialImg);
 
