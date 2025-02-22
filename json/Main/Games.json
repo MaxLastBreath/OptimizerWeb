@@ -2,7 +2,8 @@
     {
         "name": "The Legend of Zelda: Tears Of The Kingdom",
         "image": "/BG/TOTK/image1.jpg",
-        "link": "/games/tears-of-the-kingdom/"
+        "link": "/games/tears-of-the-kingdom/",
+        "beta": false
     },
     {
         "name": "The Legend of Zelda: Breath Of The Wild",
@@ -25,6 +26,7 @@
     {
         "name": "Pokemon Scarlet and Violet",
         "image": "/BG/POKEMON/image1.jpg",
-        "link": "/games/pokemon-scarlet-violet/"
+        "link": "/games/pokemon-scarlet-violet/",
+        "beta": false
     }
 ]
