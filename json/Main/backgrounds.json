@@ -1,0 +1,30 @@
+{
+    "TOTK" : [
+        "/BG/TOTK/image1.jpg",
+        "/BG/TOTK/image2.jpg",
+        "/BG/TOTK/image3.jpg"
+    ],
+    "EOW" : [
+        "/BG/EOW/image1.jpg",
+        "/BG/EOW/image2.jpg"
+    ],
+    "BOTW" : [
+        "/BG/BOTW/image1.jpg",
+        "/BG/BOTW/image2.jpg",
+        "/BG/BOTW/image3.jpg",
+        "/BG/BOTW/image4.jpg",
+        "/BG/BOTW/image5.jpg",
+        "/BG/BOTW/image6.jpg",
+        "/BG/BOTW/image7.jpg",
+        "/BG/BOTW/image8.jpg",
+        "/BG/BOTW/image9.jpg",
+        "/BG/BOTW/image10.jpg",
+        "/BG/BOTW/image11.jpg",
+        "/BG/BOTW/image12.jpg",
+        "/BG/BOTW/image13.jpg",
+        "/BG/BOTW/image14.jpg"
+    ]
+}
+
+
+

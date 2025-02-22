@@ -25,12 +25,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         
         <script>
-            const imageNames = [
-                "TOTK/image1.jpg",
-                "TOTK/image2.jpg",
-                "TOTK/image3.jpg",
-            ];
-
             document.addEventListener("DOMContentLoaded", function () {
                 AttachImageSlider("imageslide-container");
                 FeatureJsonLoad("/json/Tears Of The Kingdom/Features.json");
@@ -38,7 +32,7 @@
                 ImageSliderJsonLoad("/json/Tears Of The Kingdom/ImageSlider.json");
             });
         </script>
-
+        
         <script src="/js/backgroundSlider.js"></script>
         <script src="/js/ImageSlider.js"></script>
         <script src="/js/navbar.js"></script>
@@ -50,8 +44,8 @@
         <script src="/js/FeaturesTemplate.js"></script>
         <script src="/js/ControllerTableTemplate.js"></script>
         <script src="/js/ImageSliderTemplate.js"></script>
+        <script>BGArray(["TOTK"]);</script>
     </head>
-
 
 <nav class="navbar">
 

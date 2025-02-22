@@ -1,5 +1,24 @@
-const bgFolder = "/BG/"; 
 let currentImageIndex = 0;
+let imageNames = [];
+
+function BGArray(SelectGames) {
+    fetch("/json/Main/backgrounds.json")
+        .then(response => response.json())
+        .then(games => {
+            for (let i = 0; i < SelectGames.length; i++) {
+                let gameKey = SelectGames[i];
+
+                if (games.hasOwnProperty(gameKey)) {
+                    for (let i = 0; i < games[gameKey].length; i++){
+                        imageNames.push(games[gameKey][i]);
+                    };
+                }
+            }
+
+            initializeSlider();
+        })
+        .catch(error => console.error("Error loading games:", error));
+}
 
 function getRandomImage() {
     let randomIndex;
@@ -26,7 +45,7 @@ function fadeOutAndChange(newImageIndex) {
     }
 
     const newImg = document.createElement('img');
-    newImg.src = `${bgFolder}${imageNames[newImageIndex]}`;
+    newImg.src = `${imageNames[newImageIndex]}`;
     newImg.className = 'bg-image';
     newImg.style.position = "absolute";  // Prevent layout shift
     newImg.style.top = "0";
@@ -54,6 +73,7 @@ function fadeOutAndChange(newImageIndex) {
 
 function initializeSlider() {
     const container = document.querySelector('.background-images');
+
     if (!container) {
         console.error("Container '.background-images' not found!");
         return;
@@ -62,7 +82,7 @@ function initializeSlider() {
     currentImageIndex = getRandomImage();
     
     const initialImg = document.createElement('img');
-    initialImg.src = `${bgFolder}${imageNames[currentImageIndex]}`;
+    initialImg.src = `${imageNames[currentImageIndex]}`;
     initialImg.className = 'bg-image';
     initialImg.style.position = "absolute";
     initialImg.style.top = "0";
@@ -76,7 +96,3 @@ function initializeSlider() {
         fadeOutAndChange(getRandomImage());
     }, 25000);
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-    initializeSlider();
-});
