@@ -42,40 +42,29 @@
         <script src="/js/ImageSliderTemplate.js"></script>
     </head>
 
-    <body class="content" id="Home">
-        <div class="background-images absolute-pos">
-            <img src="" alt="NX Optimizer Background Images">
+<!-- Auto Navigation -->
+<nav class="navbar" id="auto-nav"></script></nav>
+
+<body class="content-fade-out" id="Home">
+    <div class="background-images absolute-pos">
+        <img src="" alt="NX Optimizer Background Images">
+    </div>
+
+    <div class="focused-container page-context">
+        <div class="center title title-button" onclick="fadeOutAndRedirect('/games/tears of the kingdom/#Information')"> <h4>The Legend of Zelda:</h4><h2>Tears Of The Kingdom</h2></div>
+        <hr></hr> 
+        <h1 class="section-title">Comparison Page</h1>
+    </div>
+
+    <!--Dropdown Template -->
+    <div class="content-area">
+        <div class="gradiant-box">
+            <h3 class="center section-title">Graphics Comparison.</h3>
+            <hr style="width: 50%; margin-top: 0; margin-bottom: 20px;"></hr> 
+            <div id="imageslide-container"></div>
+            <p style="height: 25px;"></p>
         </div>
+    </div>
 
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="/" class="logo"><img src="/Pictures/logo_main.png" style="height: 35px;" id="logo"></a>
-                <ul class="nav-links">
-                    <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-solid fa-file-pen"></i></a></li>
-                    <li><a href="https://github.com/MaxLastBreath/TOTK-mods/releases"> <i class="fa-brands fa-github"></i></a></li>
-                    <li><a href="/discord/" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
-                    <li><a href="https://www.patreon.com/c/MaxLastBreath" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
-                    <li><a href="https://ko-fi.com/MaxLastBreath" target="_blank"><i class="fas fa-ko-fi"></i></a></li>
-                </ul>
-            </div>
-            <script>updateLogo();</script>
-        </nav>
-
-        <div class="focused-container page-context">
-            <div class="center title title-button" onclick="fadeOutAndRedirect('/games/tears of the kingdom/#Information')"> <h4>The Legend of Zelda:</h4><h2>Tears Of The Kingdom</h2></div>
-            <hr></hr> 
-            <h1 class="section-title">Comparison Page</h1>
-        </div>
-
-        <!--Dropdown Template -->
-        <div class="content-area">
-            <div class="gradiant-box">
-                <h3 class="center section-title">Graphics Comparison.</h3>
-                <hr style="width: 50%; margin-top: 0; margin-bottom: 20px;"></hr> 
-                <div id="imageslide-container"></div>
-                <p style="height: 25px;"></p>
-            </div>
-        </div>
-
-    </body>
+</body>
 </html>

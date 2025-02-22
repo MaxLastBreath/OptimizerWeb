@@ -6,7 +6,5 @@ function fadeOutAndRedirect(url) {
 }
 
 window.addEventListener('pageshow', function(event) {
-    if (event.persisted) {
-        document.body.classList.remove("content-fade-out");
-    }
+    document.body.classList.remove("content-fade-out");
 });
