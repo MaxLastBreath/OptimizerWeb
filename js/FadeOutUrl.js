@@ -3,8 +3,10 @@ function fadeOutAndRedirect(url) {
     setTimeout(() => {
         window.location.href = url;
     }, 200);
-
-    setTimeout(() => {
-        document.body.classList.remove("content-fade-out");
-    },  1000);
 }
+
+window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+        document.body.classList.remove("content-fade-out");
+    }
+});
