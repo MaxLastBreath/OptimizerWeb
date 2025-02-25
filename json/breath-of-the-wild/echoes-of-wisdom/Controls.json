@@ -1,0 +1,28 @@
+{
+    "freecam": [
+      { "feature": "<b>Unlock Freecam", "controller": "LT (HOLD) + Pad Down", "keyboard": "U" },
+      { "feature": "<b>Fly Up/Down", "controller": "L / R", "keyboard": "Control / Space" },
+      { "feature": "<b>Adjust Camera Speed", "controller": "Pad Left / Right", "keyboard": "1 / 2" },
+      { "feature": "<b>Control Zelda in FreeCam <b>(TOGGLE)</b>", "controller": "Pad Down", "keyboard": "L" },
+      { "feature": "<b>Acceleration Increase/Decrease", "controller": "(HOLD) ZL / ZR", "keyboard": "Shift / Alt" },
+      { "feature": "<b>Teleport Zelda to Camera", "controller": "(HOLD) ZR / Pad Down", "keyboard": "O" },
+      { "feature": "<b>Change Fov", "controller": "(HOLD) Pad Down + Y / A", "keyboard": "J / K" },
+      { "feature": "<b>Tilt Camera", "controller": "Y / A", "keyboard": "3 / 4" },
+      { "feature": "<b>Reset Fov / Tilt", "controller": "Left Stick Press", "keyboard": "5" },
+      { "feature": "<b>Hide Ui", "controller": "None", "keyboard": "H" },
+      { "feature": "<b>Pause World/Game AI", "controller": "(HOLD) ZL + Minus", "keyboard": "P" },
+      { "feature": "<b>Remove Zelda's Hood", "controller": "(HOLD) ZR + Minus", "keyboard": "C" }
+    ],
+    "sequencer": [
+      { "feature": "<b>Create KeyFrame", "controller": "X", "keyboard": "6" },
+      { "feature": "<b>Delete KeyFrame", "controller": "B", "keyboard": "7" },
+      { "feature": "<b>Play Sequence", "controller": "Right Stick Press", "keyboard": "8" },
+      { "feature": "<b>Delete Sequence", "controller": "None", "keyboard": "0" },
+      { "feature": "<b>Pause Sequence", "controller": "L", "keyboard": "Space" },
+      { "feature": "<b>Reverse Sequence", "controller": "R", "keyboard": "Backspace" },
+      { "feature": "<b>Slow-Up Sequence", "controller": "Pad left", "keyboard": "1" },
+      { "feature": "<b>Speed-Up Sequence", "controller": "Pad Right", "keyboard": "2" },
+      { "feature": "<b>Acceleration Increase/Decrease", "controller": "(HOLD) ZL / ZR", "keyboard": "Shift / Alt" }
+    ]
+  }
+  

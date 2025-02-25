@@ -1,0 +1,15 @@
+{
+    "defaultArray": "resolution",
+    "arrays": {
+      "resolution": [
+        { "name": "1080p", "value": "https://imgsli.com/i/6026d8bf-0417-48cd-b869-ddf4e183d558.jpg" },
+        { "name": "1440p", "value": "https://imgsli.com/i/52687b57-73b8-4f30-b387-105c50e77c02.jpg" },
+        { "name": "4K", "value": "https://imgsli.com/i/7b6e0ac5-b3dd-4bc6-8313-fe55a78e8763.jpg" },
+        { "name": "8K", "value": "https://imgsli.com/i/9df3843e-b8fd-4406-b8a2-653f0279cb3f.jpg" }
+      ],
+    "hashMappings": {
+      "#Resolution": "resolution"
+    }
+  }
+}
+  
