@@ -1,32 +1,47 @@
 [
     {
         "name": "The Legend of Zelda: Tears Of The Kingdom",
+        "id" : "0100F2C0115B6000",
         "image": "/BG/TOTK/image1.jpg",
         "link": "/games/tears-of-the-kingdom/",
-        "beta": false
+        "beta": false,
+        "planned": false,
+        "show": true
     },
     {
         "name": "The Legend of Zelda: Breath Of The Wild",
+        "id" : "01007EF00011E800",
         "image": "/BG/BOTW/image1.jpg",
         "link": "/games/breath-of-the-wild/",
-        "beta": true
+        "beta": true,
+        "planned": false,
+        "show": true
     },
     {
         "name": "The Legend of Zelda: Echoes Of Wisdom",
+        "id" : "01008CF01BAAC000",
         "image": "/BG/EOW/image1.jpg",
         "link": "/games/echoes-of-wisdom/",
-        "beta": true
+        "beta": true,
+        "planned": false,
+        "show": true
     },
     {
         "name": "The Legend of Zelda: Link's Awakening",
-        "image": "/BG/EOW/image2.jpg",
+        "id" : "01006BB00C6F0000",
+        "image": "https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000020033/df825d5fc6747b66b051f5d3ba6a412fe625ea7878b6a10c93bb8312195682b1",
         "link": "/games/links-awakening/",
-        "beta": true
+        "beta": true,
+        "planned": false,
+        "show": true
     },
     {
         "name": "Pokemon Scarlet and Violet",
-        "image": "/BG/POKEMON/image1.jpg",
+        "id" : "0100A3D008C5C000 | 0100A3D008C5E000",
+        "image": "https://www.charlieintel.com/cdn-image/wp-content/uploads/2024/03/04/pokemon-players-convinced-shiny-legendaries-set-to-arrive-soon.jpg?width=1200&quality=60&format=auto",
         "link": "/games/pokemon-scarlet-violet/",
-        "beta": false
+        "beta": false,
+        "planned": false,
+        "show": true
     }
 ]

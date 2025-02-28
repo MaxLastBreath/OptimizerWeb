@@ -8,10 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 const gameElement = document.createElement("div");
                 gameElement.classList.add("image-box-container");
 
+                if (!game.show) {
+                    return;
+                }
+
                 gameElement.innerHTML = `
                     <a href="${game.link}" class="image-box-link underline-hover">
                         <div class="image-box">
                             <img src="${game.image}" alt="${game.name}">
+                            ${game.beta ? '<div class="beta"></div>' : ''}
                             ${game.beta ? '<div class="beta"></div>' : ''}
                         </div>
                         <div class="game-name">${game.name}</div>

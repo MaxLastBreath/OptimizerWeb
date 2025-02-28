@@ -12,7 +12,7 @@
 }
 
 .controls-table {
-    width: 90%;
+    width: 70%;
     border-collapse: separate;
     margin-top: 20px;
     border-radius: 10px;
@@ -53,6 +53,16 @@
     font-size: 16px;
 }
 
+.controls-table .image {
+    width: 100px;
+}
+
+.controls-table .image img {
+    width: 160px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
 
 .button-container {
     display: flex;
@@ -77,4 +87,31 @@
 .button-container button:hover {
     border-color: var(--option-box);
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 580px) {
+
+    .controls-table .image {
+        width: 100px;
+    }
+    
+    .controls-table .image img {
+        width: 100px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .controls-table .image {
+        display: none;
+    }
+    
+    .controls-table .image img {
+        display: none;
+    }
+
 }
