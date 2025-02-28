@@ -8,12 +8,21 @@
         { "name": "UltraCam 2304p", "value": "https://imgsli.com/i/8259dd78-e3e5-4e62-9fb6-8900bf52b879.jpg" },
         { "name": "UltraCam 2304p 2x scale", "value": "https://imgsli.com/i/8782edf7-6e76-4ba2-b877-593309842c6b.jpg" },
         { "name": "UltraCam 2304p 3x scale", "value": "https://imgsli.com/i/b8f3c1ae-7a05-4f41-897c-a45fc4e78599.jpg" }
+      ],
+      "depthoffield": [
+        { "name": "Docked No Mods", "value": "https://imgsli.com/i/135af450-0b9d-4b91-982d-ced035a88955.jpg" },
+        { "name": "UltraCam DOF 1.0", "value": "https://imgsli.com/i/0c6703af-6370-4133-9f77-142bf926e992.jpg" },
+        { "name": "UltraCam DOF 0.5", "value": "https://imgsli.com/i/488c5b94-7f5a-41f1-b7b7-76ad23cf9ca7.jpg" },
+        { "name": "UltraCam DOF 0.1", "value": "https://imgsli.com/i/da77c920-584b-4a5b-ab28-a10c94ac29e5.jpg" },
+        { "name": "UltraCam DOF 0.0", "value": "https://imgsli.com/i/eda11614-8f60-4e72-899c-00beb98cab23.jpg" }
       ]
     },
     "buttons": [
-      { "array": "resolution", "label": "Resolution", "section": "Resolution" }
+      { "array": "resolution", "label": "Resolution", "section": "Resolution" },
+      { "array": "depthoffield", "label": "Depth Of Field", "section": "DepthOfField" }
     ],
     "hashMappings": {
-      "#Resolution": "resolution"
+      "#Resolution": "resolution",
+      "#DepthOfField": "depthoffield"
     }
 }

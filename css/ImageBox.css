@@ -63,3 +63,7 @@
     color: var(--text-color-2);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.slider-select {
+    max-width: 45%;
+}

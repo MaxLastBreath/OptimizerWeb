@@ -5,8 +5,8 @@ function AttachImageSlider(TargetContainer){
     <div class="button-compare" id="button-container"></div>
 
     <div class="slider-container">
-        <select id="left-select" class="resolution-select"></select>
-        <select id="right-select" class="resolution-select"></select>
+        <select id="left-select" class="slider-select"></select>
+        <select id="right-select" class="slider-select"></select>
     </div>
 
     <div class="ImageBounds">
