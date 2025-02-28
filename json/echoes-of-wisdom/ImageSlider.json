@@ -2,14 +2,18 @@
     "defaultArray": "resolution",
     "arrays": {
       "resolution": [
-        { "name": "1080p", "value": "https://imgsli.com/i/6026d8bf-0417-48cd-b869-ddf4e183d558.jpg" },
-        { "name": "1440p", "value": "https://imgsli.com/i/52687b57-73b8-4f30-b387-105c50e77c02.jpg" },
-        { "name": "4K", "value": "https://imgsli.com/i/7b6e0ac5-b3dd-4bc6-8313-fe55a78e8763.jpg" },
-        { "name": "8K", "value": "https://imgsli.com/i/9df3843e-b8fd-4406-b8a2-653f0279cb3f.jpg" }
-      ],
+        { "name": "Handheld No Mods", "value": "https://imgsli.com/i/7018ab0c-6fad-43c9-bfda-816a05a78efc.jpg" },
+        { "name": "Docked No Mods", "value": "https://imgsli.com/i/37dddbc3-e18f-40ed-bfe9-b03ac8584458.jpg" },
+        { "name": "Docked No Mods 3x scale", "value": "https://imgsli.com/i/899a1bda-059d-4ab8-bd91-140d685ff3ca.jpg" },
+        { "name": "UltraCam 2304p", "value": "https://imgsli.com/i/8259dd78-e3e5-4e62-9fb6-8900bf52b879.jpg" },
+        { "name": "UltraCam 2304p 2x scale", "value": "https://imgsli.com/i/8782edf7-6e76-4ba2-b877-593309842c6b.jpg" },
+        { "name": "UltraCam 2304p 3x scale", "value": "https://imgsli.com/i/b8f3c1ae-7a05-4f41-897c-a45fc4e78599.jpg" }
+      ]
+    },
+    "buttons": [
+      { "array": "resolution", "label": "Resolution", "section": "Resolution" }
+    ],
     "hashMappings": {
       "#Resolution": "resolution"
     }
-  }
 }
-  
