@@ -256,9 +256,10 @@ h1 {
 }
 
 h2 {
-    color: #00b7ff;
+    color: var(--text-color);
     padding-bottom: 10px;
     text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h3 {
