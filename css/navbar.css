@@ -17,6 +17,8 @@
     font-size: 1rem;
     transition: color 0.3s ease-in-out;
     font-size: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .custom-nav:hover {

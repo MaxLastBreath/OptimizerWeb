@@ -418,19 +418,27 @@ footer {
     h3 {
         font-size: 20px;
     }
+
     #directory a {
         font-size: 1.2em;
         padding: 8px 15px;
     }
+
     .banner-image {
         max-width: 90%;
     }
+
     .container {
         grid-template-columns: repeat(1,1fr);
     }
+
     .focused-container {
         width: 100%;
         margin-left: 0;
+    }
+
+    .hide-narrow {
+        display: none;
     }
 }
 
@@ -445,4 +453,5 @@ footer {
         width: 99%;
         margin-left: 0;
     }
+
 }
