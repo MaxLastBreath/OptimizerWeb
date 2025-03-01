@@ -346,6 +346,18 @@ title {
     left: 25%;
 }
 
+.narrow {
+    max-width: 50%;
+}
+
+.extra-narrow {
+    max-width: 25%;
+}
+
+.padding {
+    padding: 10px;
+}
+
 .download-link, .contact-link {
     color: #00b7ff;
     text-decoration: none;
