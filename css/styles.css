@@ -242,12 +242,6 @@ hr {
     margin-bottom: 40px;
 }
 
-hr1 {
-    border: none;
-    border-top: 2px solid #3498db4d;
-    width: 100%;
-}
-
 .separate {
     border: none;
     border-top: 2px solid #3498db4d;
@@ -281,6 +275,20 @@ h4 {
     font-size: 50px; 
 }
 
+.underline-box {
+    border-bottom: 1px solid var(--border-color-2);
+    border-radius: 10px;
+}
+
+h5 {
+    color: #e6e6e6;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+
+}
+
 b {
     text-decoration: solid;
 }
@@ -290,6 +298,20 @@ p {
     font-size: 17px;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+title {
+    text-align: left;
+    font-size: 17px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.highlight {
+    text-decoration: solid;
+    color: var(--text-color-2);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .center {
