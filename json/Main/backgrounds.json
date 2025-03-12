@@ -6,7 +6,8 @@
     ],
     "EOW" : [
         "/BG/EOW/image1.jpg",
-        "/BG/EOW/image2.jpg"
+        "/BG/EOW/image2.jpg",
+        "https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000084618/e3a49cf14180cec09c515595fb7121b048a0f8327eae2d248909d0f0c64a9dc9"
     ],
     "BOTW" : [
         "https://cdna.artstation.com/p/assets/images/images/062/670/710/4k/digital-frontiers-00.jpg?1683682309",
@@ -28,6 +29,11 @@
         "https://cdna.artstation.com/p/assets/images/images/062/672/318/4k/digital-frontiers-123.jpg?1683686296",
         "https://cdnb.artstation.com/p/assets/images/images/062/672/399/4k/digital-frontiers-137.jpg?1683686470",
         "https://cdna.artstation.com/p/assets/images/images/062/672/770/4k/digital-frontiers-186.jpg?1683687292"
+    ],
+    "Pokemon" : [
+        "https://images5.alphacoders.com/124/1244444.jpg",
+        "https://assetsio.gnwcdn.com/Pokemon-Scarlet-Violet-Legendary-Pokemon-Header.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
+        "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fe8e6ab4-bc07-4932-bca4-17e2d7594645/dfb9qyg-f82f082a-942e-4f27-bd09-8786074a07ae.png/v1/fill/w_1192,h_670,q_70,strp/pokemon_scarlet_and_violet__background__by_rubychu96_dfb9qyg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvZmU4ZTZhYjQtYmMwNy00OTMyLWJjYTQtMTdlMmQ3NTk0NjQ1XC9kZmI5cXlnLWY4MmYwODJhLTk0MmUtNGYyNy1iZDA5LTg3ODYwNzRhMDdhZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3G09oHhYkwK3b1WBxfTLaKEQi2WROPd8GsaCnS_7osU"
     ]
 }
 

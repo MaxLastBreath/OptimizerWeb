@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Performance",
+        "ea": false,
+        "bullets": [
+            "Dynamic Framerate 30-120.",
+            "Physics Adjustments."
+        ]
+    },
+    {
+        "title": "More To Come",
+        "ea": false,
+        "bullets": [
+            "Free Camera",
+            "Hide Ui",
+            "Higher Lods",
+            "and More."
+        ]
+    }
+]

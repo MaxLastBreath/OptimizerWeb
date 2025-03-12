@@ -21,11 +21,18 @@ function BGArray(SelectGames) {
 }
 
 function getRandomImage() {
-    let randomIndex;
-    do {
-        randomIndex = Math.floor(Math.random() * imageNames.length);
-    } while (randomIndex === currentImageIndex);
-    return randomIndex;
+    if (imageNames.length === 2) {
+        currentImageIndex = currentImageIndex === 0 ? 1 : 0;
+    } else {
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * imageNames.length);
+        } while (randomIndex === currentImageIndex);
+
+        currentImageIndex = randomIndex;
+    }
+
+    return currentImageIndex;
 }
 
 function fadeOutAndChange(newImageIndex) {

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>UltraCam - BOTW Mods | 60+ FPS & Graphics Enhancements for Breath of the Wild</title>
+        <title>UltraCam - Pokemon mods | 60+ FPS & Graphics Enhancements for Pokemon Scarlet and Violet</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Enhance BOTW with UltraCam & NX-Optimizer! Unlock 60+ FPS, free camera, FOV tweaks, resolution fixes, and more for the ultimate Zelda experience.">
-        <meta name="keywords" content="Breah Of The Wild, BOTW, UltraCam, NX Optimizer, BOTW Optimizer, BOTW mods, Zelda mods, 60 FPS mods, DFPS mods, free camera mod, FPS boost, BOTW performance mod, high FPS Zelda, BOTW graphics mod, Nintendo Switch mods, BOTW frame rate fix, best BOTW mods, Citra, Ryujinx, Yuzu, BOTW emulator, Zelda emulator, BOTW on PC">
+        <meta name="description" content="Enhance Pokemon with UltraCam & NX-Optimizer! Unlock 60+ FPS, free camera, FOV tweaks, resolution fixes, and more for the ultimate Pokemon experience.">
+        <meta name="keywords" content="Pokemon Scarlet and Violet, Pokemon, UltraCam, NX Optimizer, Pokemon Optimizer, Pokemon mods, Pokemon mods, 60 FPS mods, DFPS mods, free camera mod, FPS boost, Pokemon performance mod, high FPS Pokemon, Pokemon graphics mod, Nintendo Switch mods, Pokemon frame rate fix, best Pokemon mods, Citra, Ryujinx, Yuzu, Pokemon emulator, Pokemon emulator, Pokemon on PC">
         <meta name="author" content="MaxLastBreath">
-        <meta property="og:title" content="UltraCam - The Ultimate BOTW Mod | Free Camera, 60+ FPS & Performance Boost">
-        <meta property="og:description" content="Unlock 60+ FPS, free camera, resolution fixes, and performance boosts in Breah Of The Wild with UltraCam & BOTW Optimizer mods.">
+        <meta property="og:title" content="UltraCam - The Ultimate Pokemon Mod | Free Camera, 60+ FPS & Performance Boost">
+        <meta property="og:description" content="Unlock 60+ FPS, free camera, resolution fixes, and performance boosts in Pokemon Scarlet and Violet with UltraCam & Pokemon Optimizer mods.">
         
-        <meta property="og:image" content="/BG/BOTW/image1.jpg">
-        <meta property="og:url" content="https://nxoptimizer.com/games/breath-of-the-wild/">
-        <meta property="og:site_name" content="NX Optimizer - BOTW UltraCam">
+        <meta property="og:image" content="/BG/Pokemon/image1.jpg">
+        <meta property="og:url" content="https://nxoptimizer.com/games/tears-of-the-kingdom/">
+        <meta property="og:site_name" content="NX Optimizer">
 
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/css/styles.css">
@@ -26,11 +26,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         
         <script>
+
+            let game = "Pokemon Scarlet and Violet"
+            letgameAlias = "Pokemon"
+            
             document.addEventListener("DOMContentLoaded", function () {
-                AttachImageSlider("imageslide-container");
                 FeatureJsonLoad("json/Features.json");
-                ControlsJsonLoad("json/Controls.json")
-                ImageSliderJsonLoad("json/ImageSlider.json");
             });
         </script>
         
@@ -45,7 +46,7 @@
         <script src="/js/FeaturesTemplate.js"></script>
         <script src="/js/ControllerTableTemplate.js"></script>
         <script src="/js/ImageSliderTemplate.js"></script>
-        <script>BGArray(["BOTW"]);</script>
+        <script>BGArray(["Pokemon"]);</script>
     </head>
 
 <nav class="navbar">
@@ -58,10 +59,8 @@
     <div class="sidebar" id="sidebar">
         <ul style>
             <a href="/"><img src="/Pictures/logo_main.png" class="logo" alt="NX-Optimizer Logo"></a>
-            <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Home')">Home</a></li>
             <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Information')">Information</a></li>
             <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Features')">Features</a></li>
-            <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Controls')">Controls</a></li>
             <li><a class="custom-nav underline-hover-left" onclick="scrollToSection('Sources')">Sources</a></li>
         </ul>
     </div>
@@ -74,7 +73,7 @@
 
     <!-- Home Title Section -->
     <div class="focused-container" style="margin-bottom: 120px;">
-        <div class="title"><h1><h4>The Legend of Zelda: <h2>Breath Of The Wild</h2></h4></h1></div>
+        <div class="title"><h1><h4><h2>Pokemon Scarlet and Violet</h2></h4></h1></div>
         <hr></hr>
         <section class="underline-box">
             <h5>What is UltraCam</h5>
@@ -89,10 +88,6 @@
                 
                 <li><span class="highlight">Tweaked Physics:</span> Physics have been optimized to run effectively at higher frame rates.</li>
                 
-                <li><span class="highlight">Higher Graphic Fidelity:</span> Allows you to Increase the Internal resolution and offers Quality Improvements.</li>
-
-                <li><span class="highlight">Advanced Free Camera:</span>  Allows you to capture moments of your game with ease. Offering Free Camera, Sequencer, Keyframes and Teleportation.</li>
-                
                 <li><span class="highlight">Customizable Settings:</span> Tailor UltraCam to your preferences with user-friendly customization options for a personalized experience.</li>
             </ul>
         </section>
@@ -102,53 +97,19 @@
             
             <ul class="benefits">
                 <li><span class="highlight">Reliability and Performance:</span> A lightweight code injection mod designed for optimal performance without compromising quality.</li>
-                
-                <li><span class="highlight">Unique Features:</span> Offering unique and fun features to play with!</li>
             </ul>
         </section>
     
 
         <p class="center">
             <span class="hide-narrow"><i class="fa-solid fa-arrow-down"></i></span>
-            <a class="custom-nav section-title underline-hover" onclick="scrollToSection('Information')"><span class="hide-narrow">Information</span> <i class="fa-solid fa-file-pen"></i></a>
             <a class="custom-nav section-title underline-hover" onclick="scrollToSection('Features')"><span class="hide-narrow">Features</span> <i class="fas fa-lightbulb"></i></a>
-            <a class="custom-nav section-title underline-hover" onclick="scrollToSection('Controls')"><span class="hide-narrow">Controls</span> <i class="fas fa-gamepad"></i></a>
             <a class="custom-nav section-title underline-hover" onclick="scrollToSection('Sources')"><span class="hide-narrow">Sources</span> <i class="fas fa-link"></i></a>
             <a class="custom-nav section-title underline-hover" onclick="fadeOutAndRedirect('/download/')"><span class="hide-narrow">Download</span> <i class="fa-brands fa-github"></i></a>
-            <a class="custom-nav section-title underline-hover" onclick="fadeOutAndRedirect('/patreon/')"><span class="hide-narrow">Early-Access</span> <i class="fa-brands fa-patreon"></i></a>
+            <a class="custom-nav section-title underline-hover" onclick="fadeOutAndRedirect('/patreon/')"><span class="hide-narrow">Support</span> <i class="fa-brands fa-patreon"></i></a>
             <a class="custom-nav section-title underline-hover" onclick="fadeOutAndRedirect('/discord/')"><span class="hide-narrow">Discord</span> <i class="fa-brands fa-discord"></i></a>
             <span class="hide-narrow"><i class="fa-solid fa-arrow-down"></i></span>
         </p>
-    </div>
-
-    <!-- Information Section -->
-    <div class="content-area" id="Information">
-        <!-- Preview -->
-        <div class="bottom-box">
-            <h3 class="section-title">UltraCam Features Preview</h3>
-            <hr style="width: 25%; margin-top: 0; margin-bottom: 20px;"></hr> 
-            <p>Breath Of The Wild Features Preview</p>
-            <hr style="width: 50%; margin-top: 0; margin-bottom: 20px;"></hr> 
-            <div class="video-container">
-                <iframe 
-                    src="https://www.youtube.com/embed/o6Jn8MxrOvA?autoplay=1&mute=1" 
-                    frameborder="0" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-
-        <!-- Image Comparison -->
-        <div class="bottom-box">
-            <h3 class="section-title">Graphical Comparisons.</h3>
-            <hr class="narrow"></hr> 
-            
-            <div id="imageslide-container"></div>
-
-            <p class="center">
-                <a class="custom-nav section-title" onclick="fadeOutAndRedirect('/games/tears-of-the-kingdom/image-slider/' + window.location.hash)">Click For Comparison Page</a>
-            </p>
-        </div>
     </div>
 
     <!-- Features Section -->
@@ -159,20 +120,9 @@
         <hr class="narrow"></hr>
         
         <!-- Features Container -->
-        <div class="page-context section-margin">
+        <div class="page-context">
             <ul id="feature-container"></ul>
         </div>
-    </div>
-
-    <!-- Controls Section  -->
-    <div class="focused-container gradiant-box" style="margin-top: 70px; max-width: 1200px;" id="Controls">
-        <h2 class="section-title  section-margin">MOD CONTROLS</h2>
-        <hr class="extra-narrow"></hr>
-        <p class="center">Controls for UltraCam Breath Of The Wild (Mostly Universal).</p>
-        <hr class="narrow"></hr>
-        <!-- Controls and Button Controls Containers. -->
-        <div class="button-container" id="button-container-controls"></div>
-        <div class="controls-container" id="controls-table"></div>
     </div>
 
     <!-- Download Section  -->
@@ -182,9 +132,10 @@
         <div style="margin: 20px;">
             <li><a class="custom-nav underline-hover-left" onclick="fadeOutAndRedirect('/discord/')">Discord Server</a> - Got a question? Need Help? Join our Discord.</li>
             <li><a class="custom-nav underline-hover-left" onclick="fadeOutAndRedirect('/download/')">NX-Optimizer</a> - Dedicated launcher/Ultracam Manager.</li>
-            <li><a class="custom-nav underline-hover-left" onclick="fadeOutAndRedirect('https://gamebanana.com/mods/?')">Gamebanana</a> - Standalone Download (MOD ONLY).</li>
-            <li><a class="custom-nav underline-hover-left" href="./downloads/.zip" download="">Website Download Ver. 2.6.1</a> - Standalone Download (MOD ONLY).</li>
-            <li><a class="custom-nav underline-hover-left" onclick="fadeOutAndRedirect('/patreon/')">Patreon</a>/<a class="custom-nav underline-hover-left" onclick="fadeOutAndRedirect('/ko-fi/')">Ko-Fi</a> - For Early Access Features.</li>
+            <li><a class="custom-nav underline-hover-left" onclick="fadeOutAndRedirect('https://gamebanana.com/mods/513676')">Gamebanana</a> - Standalone Download (MOD ONLY).</li>
+            <li><a class="custom-nav underline-hover-left" href="./downloads/DynamicFPS-scarlet.zip" download="">Website Download Pokemon Scarlet</a> - Standalone Download (MOD ONLY).</li>
+            <li><a class="custom-nav underline-hover-left" href="./downloads/DynamicFPS-violet.zip" download="">Website Download Pokemon Violet</a> - Standalone Download (MOD ONLY).</li>
+            <li><a class="custom-nav underline-hover-left" onclick="fadeOutAndRedirect('/patreon/')">Patreon</a>/<a class="custom-nav underline-hover-left" onclick="fadeOutAndRedirect('/ko-fi/')">Ko-Fi</a> - Support the Project.</li>
         </div>
     </div>
 </body>
