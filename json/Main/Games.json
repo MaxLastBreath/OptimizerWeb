@@ -13,7 +13,7 @@
         "id" : "01007EF00011E800",
         "image": "/BG/BOTW/image1.jpg",
         "link": "/games/breath-of-the-wild/",
-        "beta": true,
+        "beta": false,
         "planned": false,
         "show": true
     },
@@ -22,7 +22,7 @@
         "id" : "01008CF01BAAC000",
         "image": "/BG/EOW/image1.jpg",
         "link": "/games/echoes-of-wisdom/",
-        "beta": true,
+        "beta": false,
         "planned": false,
         "show": true
     },
