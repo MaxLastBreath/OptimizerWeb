@@ -9,9 +9,9 @@
     --border-color: rgba(221, 221, 221, 0.502);
     --border-color-2: rgba(0, 183, 255, 0.463);
     --transparent: rgba(0, 183, 255, 0);
-    --icon-hover: rgba(0, 183, 255);
+    --icon-hover: rgb(19, 24, 26);
     --nav-bar: rgba(12, 11, 34, 0.473);
-    --footer: rgba(27, 34, 39, 0.482);
+    --footer: rgba(0, 0, 0, 0.243);
     --title: rgb(255, 255, 255);
     --title_2: rgb(75, 255, 198);
 }
@@ -380,17 +380,63 @@ body {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     display: block;
     position: relative;
     margin-top: 20px;
     padding: 50px 0px;
     color: #ccc;
-    width: 80%;
-    left: 10%;
     opacity: 1;
-    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+}
+
+.main-footer{
+    background-color: var(--footer);
+}
+
+.footer-container {
+    width: 90%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.footer-container b {
+    font-size: 25px;
+    margin-left: 0;
+}
+
+.footer-container .custom-nav {
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.left-content p {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 125px;
+}
+
+.right-content {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 125px;
+}
+
+.right-content div {
+    flex: 1;
+}
+
+.copyright {
+    font-size: 18px;
+    text-align: right;
+    grid-column: span 2;
+    margin-top: 10px;
+    margin-right: 125px;
 }
 
 .mod-images, .highlight-images {
