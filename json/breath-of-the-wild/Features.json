@@ -4,9 +4,8 @@
         "ea": false,
         "bullets": [
             "Dynamic Framerate 30-240.",
-            "Stabilize FPS.",
             "Menu FPS Cap.",
-            "Slight Physics Adjustments.",
+            "Huge Physics adjustments.",
             "Forced Triple Buffer"
         ]
     },
@@ -14,10 +13,9 @@
         "title": "Graphics",
         "ea": false,
         "bullets": [
-            "Internal Resolution up to 1440p",
+            "Internal Resolution up to 1200p",
             "Quality Improvements",
-            "Supports Custom Aspect Ratios",
-            "Control Depth of Field Strength"
+            "Supports Custom FOV"
         ]
     },
     {
@@ -36,10 +34,7 @@
         "title": "Extra Features",
         "ea": false,
         "bullets": [
-            "Hide Zelda Hood (toggle)",
-            "Hide Ui",
-            "Higher Lods",
-            "Change Fov"
+            "Hide Ui"
         ]
     }
 ]
