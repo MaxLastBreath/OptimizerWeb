@@ -2,7 +2,7 @@ function loadPatchInfo(classID, patch){
     fetch(`${patch}/patchInfo.json`)
         .then(response => response.json())
         .then(json => {
-            classID.innerHTML += `<li><a class="custom-nav" href="${patch}">${json.title} : ${json.date}</a></li>`
+            classID.innerHTML += `<li><a class="custom-nav" href="${patch}"><b>${json.date}</b> : ${json.title}</a></li>`
         })
         .catch(error => console.error(`Error loading ${patch}/patchInfo.json:`, error));
 }
@@ -20,7 +20,7 @@ fetch('releases.json')
         releases.style.padding = "20px"
         releases.style.textAlign = "left"
         
-        releases.innerHTML += "<h2>Public Releases : </h2>"
+        releases.innerHTML += "<h2>Patch Notes For : </h2>"
         
         for (let patch of json.public) {
             loadPatchInfo(releases, patch)
