@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p><b>Pages</b></p>
                 <p><a class="custom-nav underline-hover" href="/">Home</a></p>
                 <p><a class="custom-nav underline-hover" href="/guides/setup-guide/">Guides</a></p>
-            </div>
+                <p><a class="custom-nav underline-hover" href="/releases/">Patch Notes</a></p>
+                </div>
             <div>
                 <p><b>Social Media</b></p>
                 <p><a class="custom-nav underline-hover" href="discord">Discord</a></p>
