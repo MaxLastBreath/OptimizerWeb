@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
     navigation.innerHTML = `
         ${logo_html}
         <ul class="nav-links">
-            <li><a onclick="fadeOutAndRedirect('/download/')"> <i class="fa-solid fa-file-pen"></i></a></li>
+            <li><a onclick="fadeOutAndRedirect('/releases/')"> <i class="fa-solid fa-file-pen"></i></a></li>
             <li><a onclick="fadeOutAndRedirect('/download/')"> <i class="fa-brands fa-github"></i></a></li>
             <li><a onclick="fadeOutAndRedirect('/discord')" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
             <li><a onclick="fadeOutAndRedirect('/patreon/')" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>

@@ -8,12 +8,12 @@
 This update is a significant refactor with nearly every system rewritten. **6000+** lines of code changed, **180+** files updated. This update has been in the works for over 5 months and the game updates have been in the works for over a year.
 - This entire project is ran by me, MaxLastBreath, it's very difficult to release updates often on this scale, so delay on Updates is expected. Mods of this scale are tremendous amount of work.
 
-<br></br>
+<hr></hr>
 
 ### The Update Aims to
 - Compatibility for more than just Tears Of The Kingdom (new games)
 - Website for streamlined mod game information
-- Rebranding TOTK Optimizer to NX Optimizer
+- Rehranding TOTK Optimizer to NX Optimizer
 - Improve the entire backend, basically the entire project has been rewritten.
 
 ### Find me On : 
@@ -30,10 +30,11 @@ This update is a significant refactor with nearly every system rewritten. **6000
 - Echoes of Wisdom
 - Cheat creators have been credited in the readme.
 
-<br></br>
+<hr></hr>
 
 # [Breath of The Wild (Switch) UltraCam, BOTW Optimizer](https://www.nxoptimizer.com/games/breath-of-the-wild/).
-[![BOTW ULTRACAM PREVIEW](https://img.youtube.com/vi/o6Jn8MxrOvA/0.jpg)](https://www.youtube.com/watch?v=o6Jn8MxrOvA)
+<iframe width="100%" height="800px" src="https://www.youtube.com/embed/o6Jn8MxrOvA?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 - Features UltraCam Beyond's FreeCam.
     - UltraCam (Free Camera)
     - Sequencer
@@ -74,11 +75,12 @@ This update is a significant refactor with nearly every system rewritten. **6000
 - Thunderblight ganon is fast 
 - Some shrine's gears stop working.
 
-<br></br>
+<hr></hr>
 
 # [Echoes Of Wisdom (Switch) UltraCam, EOW Optimizer](https://www.nxoptimizer.com/games/echoes-of-wisdom/).
 
-[![EOW ULTRACAM PREVIEW](https://img.youtube.com/vi/JI0bV5eTC0c/0.jpg)](https://www.youtube.com/watch?v=JI0bV5eTC0c)
+<iframe width="100%" height="800px" src="https://www.youtube.com/embed/JI0bV5eTC0c?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 - Features UltraCam Beyond's FreeCam.
     - UltraCam (Free Camera)
     - Sequencer
@@ -105,21 +107,21 @@ This update is a significant refactor with nearly every system rewritten. **6000
 ### Known issues
 - None
 
-<br></br>
+<hr></hr>
 
 # Tears Of The Kingdom
 - Fixed compatibility with the TOTK Randomizer.
 - TOTK continues it's development in Early Access for the moment.
 - The [TKMM project](https://tkmm.org/) now has integrated TOTK Optimizer :)
 
-<br></br>
+<hr></hr>
 
 # Pokemon Scarlet and Violet
 - Dynamic Framerate.
 - Resolution/LOD changes.
 - This mod has been publicly available for a while, but I'm just now adding it to the Optimizer. I'll also be updating this mod in the future, stay tuned.
 
-<br></br>
+<hr></hr>
 
 # NX Optimizer Webpage (NEW).
 - Updated the readme to lead to the new website for information.
@@ -145,7 +147,7 @@ This update is a significant refactor with nearly every system rewritten. **6000
 - [Echoes of Wisdom Page](https://www.nxoptimizer.com/games/echoes-of-wisdom/)
 - [Breath Of The Wild Page](https://www.nxoptimizer.com/games/breath-of-the-wild/)
 
-<br></br>
+<hr></hr>
 
 # NX Optimizer Changes :
 
@@ -167,8 +169,9 @@ This update is a significant refactor with nearly every system rewritten. **6000
 - Improved button functionality and animations
 - Graphic/Advanced icons with lighting for selected mode
 - Animated NX Optimizer logo at bottom right
+- Now asks the user which Legacy Emulator to install to.
 - New button icons: 
-    - **Browse** : Select your Emulator executable.
+    - **hrowse** : Select your Emulator executable.
     - **Auto Find** : Default to Appdata for Emulator Search.
     - **Backup** : Backup Save files.
     - **Shaders** : Remove shaders for current game. 
@@ -189,7 +192,10 @@ This update is a significant refactor with nearly every system rewritten. **6000
 - Enhanced Linux GPU and CPU detection
 - Selected Emulator now acts as it's own separate class internally, making it more consistent.
 - The config file now stores each game info separately within their TitleID
+- Backups now have a date and there's a backup folder for each game separately
+- Added the ability to read .nxop zip files, those are custom zip files for the TOTK Optimizer.
 - Utilizes TexturePool for image generation
+- Improved backup logic
 - Compatibility with Nuitka compiler
 - Artifactv4 added to GitHub Actions
 - UTF-8 error fixes
@@ -217,7 +223,7 @@ This update is a significant refactor with nearly every system rewritten. **6000
 - The auto search functionality now searches for the game installation inside of an emulator.
 
 ### Other Updates
-- Rebranded from TOTK Optimizer to NX Optimizer
+- Rehranded from TOTK Optimizer to NX Optimizer
 - TKMM integrates changes directly
 - Official website: [https://www.nxoptimizer.com/](https://www.nxoptimizer.com/)
 - Enhanced readme linking to official site
