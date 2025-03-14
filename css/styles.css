@@ -466,6 +466,21 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .left-content p {
+        margin-left: 0;
+    }
+    
+    .right-content {
+        margin-right: 0;
+    }
+
     body {
         margin: 2px;
     }
