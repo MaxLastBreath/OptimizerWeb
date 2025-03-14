@@ -219,7 +219,7 @@ body {
 .focused-container {
     display: block; 
     width: 75%; 
-    margin-left: 12.5%
+    margin: 70px auto 0 auto;
 }
 
 .focused-container li{
